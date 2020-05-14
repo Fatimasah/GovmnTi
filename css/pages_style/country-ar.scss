@@ -1,0 +1,30 @@
+//  details section start
+.details-section {
+    .inner-cont {
+        text-align: right;
+    }
+}
+/* service information model start */
+.modal.service-modal {
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                form {
+                    .form-group {
+                        label {
+                            text-align: right;
+                        }
+                        .serv-phone {
+                            padding-right: 0px;
+                            padding-left: 5px;
+                        }
+                        .serv-fax {
+                            padding-left: 0px;
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

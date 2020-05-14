@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,2BAA2B;AAC3B,AAEQ,gBAFQ,CACZ,kBAAkB,CACd,aAAa,CAAC;EACV,WAAW,EAAE,KAAK;CACrB;;AAJT,AAYoC,gBAZpB,CACZ,kBAAkB,CAId,aAAa,CACT,eAAe,CACX,IAAI,CACA,YAAY,CACR,QAAQ,CACJ,CAAC,AACI,aAAa,CACV,IAAI,CAAC;EACD,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,KAAK;CACtB;;AAUrC,yBAAyB",
+    "sources": [
+        "setting-ar.scss"
+    ],
+    "names": [],
+    "file": "setting-ar.css"
+}

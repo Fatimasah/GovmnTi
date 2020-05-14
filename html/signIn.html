@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <title>GovmanTi Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../imgs/favicon.png">
+
+    <!-- font awosme-->
+    <link rel="stylesheet" href="../css/assets/all.min.css">
+    <link rel="stylesheet" href="../css/assets/fontawesome.min.css">
+    <!-- font awosme-->
+
+    <!-- assets files -->
+    <link rel="stylesheet" href="../css/assets/bootstrap.min.css"> <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/assets/aos.css"> <!-- aos animation-->
+    <link rel="stylesheet" href="../css/assets/icofont.min.css"> <!-- icofont-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="stylesheet" href="../css/pages_style/signIn.css">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex" style="max-width: 1350px !important;padding-right: 150px;">
+            <div class="logo-img">
+                <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+            </div>
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="../index.html">Home</a> </li>
+                    <li><a href="My-GovmnTi.html">My GovmnTi </a> </li>
+                    <li><a class="nav-link" data-toggle="modal" data-target="#my-eFile">E-File</a> </li>
+                    <li><a hclass="nav-link" data-toggle="modal" data-target="#addver-select">Advertising</a> </li>
+
+                    <li><a href="signIn.html" style="color: #C90000;">SignIn/up</a> </li>
+                    <li class="drop-down"><a href="">Lang</a>
+                        <ul>
+                            <li><a href="{{url('en')}}"><img alt="sar" src="{{url('assets/img/usd.png')}}">English</a>
+                            </li>
+                            <li><a href="{{url('ar')}}"><img alt="sar" src="{{url('assets/img/sar.png')}}">Arabic</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href=""><img alt="usd" src="../imgs/ico.png"></a>
+                        <ul class="grid">
+                            <li class="grid-li"><a href="#about">Eng</a> </li>
+                            <li><a href="#team">Ar</a> </li>
+                            <li><a href="#team">Ar</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- signIn section start -->
+    <section class="signIn-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <form class="form-signin col-lg-4 col-md-6 col-sm-8">
+                    <div class="logo-img mx-auto mb-1">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a></div>
+                    <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control px-3" placeholder="Email address"
+                            required="" autofocus="">
+                    </div>
+                    <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="form-control px-3" placeholder="Password"
+                            required="">
+                    </div>
+                    <div class="select-btn">
+                        <button class="btn btn-lg btn-primary btn-block blue-btn signIn-btn mt-4 mb-2"
+                            type="submit">Sign
+                            in</button></div>
+                    <div class="check-rem d-flex">
+                        <div class="form-check p-0 d-flex mb-2">
+                            <input class="form-check-input" type="checkbox" id="remember">
+                            <label class="form-check-label check-label" for="remember">
+                                subscribe to news letter
+                            </label>
+                        </div>
+                        <a href="#">Forget Password?</a>
+                    </div>
+
+                    <div class="select-btn mt-5 mb-4">
+                        <button type="button" class="btn btn-primary w-100" data-toggle="modal"
+                            data-target="#sign-origin">
+                            sign up
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- signIn section end -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; All Copyright Reserved For <strong><span>www.govmnti.com</span></strong>.
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <!-- sign origin  Modal start-->
+    <div class="modal fade" id="sign-origin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="selection-block">
+                            <h5>original</h5>
+                            <div class="form-row">
+                                <div class="form-group col-md-6 sec_">
+                                    <label for="o-country">country</label>
+                                    <select id="o-country" class="form-control selectpicker" required>
+                                        <option value='' hidden>country</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6 sec_">
+                                    <label for="o-city">city</label>
+                                    <select id="o-city" class="form-control selectpicker" required>
+                                        <option value='' hidden>city</option>
+                                        <option>11</option>
+                                        <option>22</option>
+                                        <option>33</option>
+                                    </select>
+                                </div>
+                            </div> <!-- origin-->
+                            <h5>Resident</h5>
+                            <div class="form-row">
+                                <div class="form-group col-md-6 sec_">
+                                    <label for="r-country">country</label>
+                                    <select id="r-country" class="form-control selectpicker" required>
+                                        <option value='' hidden>country</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6 sec_">
+                                    <label for="r-city">city</label>
+                                    <select id="r-city" class="form-control selectpicker" required>
+                                        <option value='' hidden>city</option>
+                                        <option>11</option>
+                                        <option>22</option>
+                                        <option>33</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- resident-->
+                            <div class="select-btn mx-auto">
+                                <button type="submit" class="btn btn-primary next-btn blue-btn mt-4 w-100"
+                                    data-toggle="modal" data-target="#sign-up" disabled>
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign origin Modal end-->
+
+    <!-- sign up Modal start-->
+    <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="logo-img">
+                    <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="first name">first name</label>
+                                    <input type="text" class="form-control" id="first name" placeholder="first name"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="last name">last name</label>
+                                    <input type="text" class="form-control" id="last name" placeholder="last name"
+                                        required>
+                                </div>
+                            </div> <!-- first and last name-->
+                            <div class="form-row">
+                                <div class="form-group col-md-6 sec_">
+                                    <label for="gender">gender</label>
+                                    <select id="gender" class="form-control selectpicker" required>
+                                        <option selected>femal</option>
+                                        <option>male</option>
+                                        <option>prefer not to say</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="date of birth">date of birth</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                            </div> <!-- gender and D of B-->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="email">email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="phone/mpbile">phone/mobile</label>
+                                    <input type="number" class="form-control" id="phone/mobile"
+                                        placeholder="phone/mobile" required>
+                                </div>
+                            </div> <!-- email and phone-->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="password">password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="password"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="confirm password">confirm password</label>
+                                    <input type="password" class="form-control" id="confirm-password"
+                                        placeholder="confirm password" required>
+                                </div>
+                            </div><!-- password and confirm-->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="company">company name</label> <span>(optional)</span>
+                                    <input type="text" class="form-control" id="company"
+                                        placeholder="company information">
+                                </div>
+                                <div class="form-group form-group-check col-md-6">
+                                    <div class="form-check p-0">
+                                        <input class="form-check-input" type="checkbox" id="test1">
+                                        <label class="form-check-label check-label" for="test1">
+                                            subscribe to news letter
+                                        </label>
+                                    </div>
+                                </div>
+                            </div><!-- company and check-->
+                            <div class="select-btn col-md-6 mx-auto mt-4">
+                                <button type="submit" class="btn btn-primary mt-4 w-100" data-toggle="modal">
+                                    Sgin Up
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign up Modal end-->
+
+    <!-- my e-file modal start -->
+    <div class="modal fade" id="my-eFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="ind-eFile.html" class="btn btn-primary red-btn mt-2 w-100">
+                                    Individual
+                                </a>
+                            </div>
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="cor-eFile.html" class="btn btn-primary blue-btn mt-2 w-100">
+                                    Corporate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my efile modal end -->
+
+    <!-- addvertisng select modal start -->
+    <div class="modal fade" id="addver-select" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="html/My-GovmnTi.html" class="btn btn-primary red-btn mt-2 w-100">
+                                    Registered
+                                </a>
+                            </div>
+                            <div class="select-btn mx-auto col-sm-6">
+                                <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
+                                    data-target="#addver-regester">
+                                    Not Registered
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addvertisng select modal end -->
+
+    <!-- addver regester Modal start-->
+    <div class="modal fade" id="addver-regester" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="first-name">first name</label>
+                                    <input type="text" class="form-control" id="first-name" placeholder="first name"
+                                        required>
+                                </div>
+                            </div> <!-- first name-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="mobile-num">mobile number</label>
+                                    <input type="number" class="form-control" id="mobile-num"
+                                        placeholder="mobile number" required>
+                                </div>
+                            </div> <!-- mobile -->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="tel-num">tel. number</label>
+                                    <input type="tel" class="form-control" id="tel-num" placeholder="tel. number"
+                                        required>
+                                </div>
+                            </div><!-- tel num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="fax-num">fax number</label>
+                                    <input type="number" class="form-control" id="fax-num" placeholder="fax number"
+                                        required>
+                                </div>
+                            </div> <!-- fax num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="email">email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn red-btn mt-4 w-100 addver-confirm" data-toggle="modal"
+                        data-target="#addver-text" disabled>
+                        confirm
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addver regester Modal end-->
+
+    <!-- addver text Modal start-->
+    <div class="modal fade" id="addver-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>GovmnTi Administration would like to thank you for your trust to advertise with us</p>
+                    <p>Our sales department will call you soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addver text Modal end-->
+
+    <!-- assets files -->
+    <script src="../js/assets/jquery-3.3.1.min.js"></script> <!-- JQ-->
+    <script src="../js/assets/popper.min.js"></script> <!-- popper-->
+    <script src="../js/assets/bootstrap.min.js"></script> <!-- bootstrap-->
+    <script src="../js/assets/aos.js"></script> <!-- aos animation-->
+    <!-- font awosme-->
+    <script src="../js/assets/all.min.js"></script>
+    <script src="../js/assets/fontawesome.min.js"></script>
+    <!-- font awosme-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

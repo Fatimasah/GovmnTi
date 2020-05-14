@@ -1,0 +1,263 @@
+.profile-section .profile-container .profile-form .country-block .country-services .btn, .profile-section .profile-container .profile-form .country-block .country-services .btn:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* profile section start */
+.profile-section .title {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.profile-section .profile-container {
+  background: #e5e5e4;
+  padding: 0 7%;
+}
+
+@media (max-width: 992px) {
+  .profile-section .profile-container {
+    padding: 0 2%;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-section .profile-container {
+    padding: 0 15px;
+  }
+}
+
+.profile-section .profile-container .profile-info {
+  padding-top: 20px;
+}
+
+.profile-section .profile-container .profile-info .profile-img {
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .profile-section .profile-container .profile-info .profile-img {
+    text-align: center;
+  }
+}
+
+.profile-section .profile-container .profile-info .profile-img img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .profile-section .profile-container .profile-info .profile-img img {
+    width: 75%;
+  }
+}
+
+.profile-section .profile-container .profile-info .profile-name {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.profile-section .profile-container .profile-info .profile-name h3 {
+  font-family: "PB";
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.profile-section .profile-container .profile-info .profile-name p {
+  color: #5070d9;
+  font-family: "RB";
+  font-size: 14px;
+}
+
+.profile-section .profile-container .profile-info .profile-name p svg {
+  color: #fea700;
+}
+
+.profile-section .profile-container .profile-info .profile-setting {
+  margin-top: 15px;
+}
+
+.profile-section .profile-container .profile-info .profile-setting h5,
+.profile-section .profile-container .profile-info .profile-setting h5 a {
+  font-family: "RB";
+  font-size: 16px;
+  text-align: left;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.profile-section .profile-container .profile-info .profile-setting ul li a {
+  font-family: "RR";
+  text-transform: capitalize;
+  color: #000000;
+  margin-left: 45px;
+}
+
+.profile-section .profile-container .profile-form {
+  background-color: #f8f8f8;
+}
+
+@media (min-width: 992px) {
+  .profile-section .profile-container .profile-form {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .profile-section .profile-container .profile-form {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-section .profile-container .profile-form {
+    margin-left: unset;
+  }
+}
+
+.profile-section .profile-container .profile-form .blue-text {
+  font-size: 25px;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 15px;
+  background: #7a7b7d;
+}
+
+.profile-section .profile-container .profile-form .country-block {
+  border-bottom: 1px solid #70707069;
+}
+
+.profile-section .profile-container .profile-form .country-block .country-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-section .profile-container .profile-form .country-block .country-name img {
+  max-width: 100%;
+  margin-right: 5px;
+}
+
+.profile-section .profile-container .profile-form .country-block .country-name h6 {
+  color: #0d1b23;
+  font: 20px "RB";
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.profile-section .profile-container .profile-form .country-block .country-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-section .profile-container .profile-form .country-block .country-services .services-type p,
+.profile-section .profile-container .profile-form .country-block .country-services .hidden-services p {
+  height: 42px;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font: 16px "RB";
+  letter-spacing: 0.28px;
+  color: #0d1b23;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 576px) {
+  .profile-section .profile-container .profile-form .country-block .country-services .services-type p,
+  .profile-section .profile-container .profile-form .country-block .country-services .hidden-services p {
+    padding: 5px;
+    line-height: 1.5;
+  }
+}
+
+.profile-section .profile-container .profile-form .country-block .country-services .hidden-services {
+  display: none;
+}
+
+.profile-section .profile-container .profile-form .country-block .country-services .serv-links,
+.profile-section .profile-container .profile-form .country-block .country-services .btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  font-size: 15px;
+  height: 42px;
+  width: 130px;
+}
+
+@media (max-width: 767px) {
+  .profile-section .profile-container .profile-form .country-block .country-services .serv-links,
+  .profile-section .profile-container .profile-form .country-block .country-services .btn {
+    font-size: 10px !important;
+    height: 30px;
+    width: 100px;
+  }
+}
+
+.profile-section .profile-container .profile-form .country-block .country-services .btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: -40px !important;
+  color: var(--whiteColor);
+  border: none;
+  text-transform: capitalize;
+  padding: 10px 10px;
+  background-color: #c90000;
+  -webkit-box-shadow: 10px 10px 20px #000000a6;
+          box-shadow: 10px 10px 20px #000000a6;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .profile-section .profile-container .profile-form .country-block .country-services .btn {
+    margin-top: -30px !important;
+  }
+}
+
+.profile-section .profile-container .profile-form .country-block .country-services .btn:hover {
+  background-color: #0d1b23;
+}
+
+.profile-section .profile-container .profile-form .country-block .country-services .serv-links {
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "RM";
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.profile-section .profile-container .advertise-place {
+  height: 100%;
+}
+
+.profile-section .profile-container .advertise-place p {
+  background: cornsilk;
+  padding: 10px;
+  height: 100%;
+}
+
+/* profile section end */
+/*# sourceMappingURL=My-GovmnTi.css.map */

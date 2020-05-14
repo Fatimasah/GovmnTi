@@ -1,0 +1,56 @@
+html {
+  direction: rtl;
+}
+
+html,
+body {
+  text-align: right;
+}
+
+.select-buttn .btn {
+  background-image: -webkit-gradient(linear, right top, left top, from(#c90000), to(#850202));
+  background-image: linear-gradient(to left, #c90000, #850202);
+}
+
+/* header */
+header .logo-img {
+  margin-left: auto;
+  margin-right: unset;
+}
+
+/* signup modal start */
+.modal .modal-dialog .modal-content .modal-body form .form-group {
+  text-align: right;
+}
+
+[type="checkbox"]:not(:checked) + .check-label,
+[type="checkbox"]:checked + .check-label {
+  padding-left: 0px;
+  padding-right: 75px;
+}
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + .check-label:after,
+[type="checkbox"]:checked + .check-label:after {
+  left: 0;
+  right: 15px;
+  content: "\2713\0020";
+}
+
+@media (max-width: 767px) {
+  [type="checkbox"]:not(:checked) + .check-label:after,
+  [type="checkbox"]:checked + .check-label:after {
+    right: 15px;
+  }
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + .check-label:before,
+[type="checkbox"]:checked + .check-label:before {
+  content: "";
+  left: unset;
+  right: 0;
+}
+
+/* signup modal end */
+/*# sourceMappingURL=main-ar.css.map */

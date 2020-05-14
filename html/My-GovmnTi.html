@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GovmnTi</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../imgs/favicon.png">
+
+    <!-- font awosme-->
+    <link rel="stylesheet" href="../css/assets/all.min.css">
+    <link rel="stylesheet" href="../css/assets/fontawesome.min.css">
+    <!-- font awosme-->
+
+    <!-- assets files -->
+    <link rel="stylesheet" href="../css/assets/bootstrap.min.css"> <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/assets/aos.css"> <!-- aos animation-->
+    <link rel="stylesheet" href="../css/assets/icofont.min.css"> <!-- icofont-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="stylesheet" href="../css/pages_style/My-GovmnTi.css">
+
+</head>
+
+<body>
+    <!-- start header section -->
+    <section class="navbar-section">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"> <img src="../imgs/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-3 active">
+                            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="My-GovmnTi.html">My GovmnTi</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" data-toggle="modal" data-target="#my-eFile">E-File</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" data-toggle="modal" data-target="#addver-select">Advertising</a>
+                        </li>
+                        <li class="nav-item sign px-3">
+                            <a class="nav-link" href="../html/signIn.html">SignIn/Up</a>
+                        </li>
+                        <li class="nav-item px-3 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Lang
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Eng</a>
+                                <a class="dropdown-item" href="#">Ar</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-th"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">1</a>
+                                <a class="dropdown-item" href="#">2</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+        <!-- </div> -->
+    </section>
+    <!-- end header section -->
+
+    <!-- start profile section -->
+    <section class="profile-section py-0">
+        <div class="c">
+            <div class="title text-center">
+                <!-- <h2 class="my-3">Welcome to GovmnTi</h2> -->
+            </div>
+            <div class="profile-container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-6 px-md-0">
+                        <div class="profile-info">
+                            <div class="profile-img">
+                                <img src="../imgs/my-govmnti/man.png" alt="profile img">
+                                <div class="profile-name">
+                                    <h3 id="user-name">user name</h3>
+                                    <p><i class="fas fa-envelope"></i> Email</p>
+                                </div>
+                            </div>
+
+                            <div class="profile-setting">
+                                <h5><a href="setting-ind.html">setting</a> </h5>
+                                <div class="history">
+                                    <h5>history</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">-most used</a></li>
+                                        <li><a href="#">-most visited</a></li>
+                                    </ul>
+                                </div>
+                                <div class="groups">
+                                    <h5>groups</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">-My Group</a></li>
+                                        <li><a href="#">-All Groups</a></li>
+                                        <li><a href="#">-Create Group</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="helping-btn text-center">
+                            <a href="#" class="need-help">Need Help?</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-sm-12 order-3 order-md-2 px-md-0">
+                        <div class="profile-form">
+                            <p class="blue-text mb-0 w-100">
+                                Add Country
+                            </p>
+                            <div class="country-block px-md-5 px-1 py-4">
+                                <div class="country-name">
+                                    <img src="../imgs/my-govmnti/Jordan.svg" alt="country flag">
+                                    <h6>jordan</h6>
+                                </div>
+                                <div class="country-services">
+                                    <div class="services-type">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p>visa</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>tax</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>justice</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>land</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hidden-services" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="serv-links">view all</button>
+                                    <a href="#" class="btn btn-primary red-btn my-0">Add E-Service</a>
+                                </div>
+                            </div>
+                            <div class="country-block px-md-5 px-1 py-4">
+                                <div class="country-name">
+                                    <img src="../imgs/my-govmnti/Saudi-Arabia.svg" alt="country flag">
+                                    <h6>Saudi Arabia</h6>
+                                </div>
+                                <div class="country-services">
+                                    <div class="services-type">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p>visa</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>tax</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>justice</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>land</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hidden-services" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="serv-links">view all</button>
+                                    <a href="#" class="btn btn-primary red-btn my-0">Add E-Service</a>
+                                </div>
+                            </div>
+                            <div class="country-block px-md-5 px-1 py-4">
+                                <div class="country-name">
+                                    <img src="../imgs/my-govmnti/Denmark.svg" alt="country flag">
+                                    <h6>Denmark</h6>
+                                </div>
+                                <div class="country-services">
+                                    <div class="services-type">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p>visa</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>tax</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>justice</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>land</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hidden-services" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="serv-links">view all</button>
+                                    <a href="#" class="btn btn-primary red-btn my-0">Add E-Service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 order-2 order-md-3 mb-3 px-md-0">
+                        <div class=" advertise-place text-center">
+                            <p>a<br>
+                                d<br>
+                                v<br>
+                                e<br>
+                                r<br>
+                                t<br>
+                                i<br>
+                                s<br>
+                                e<br>
+                                place</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end profile section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; All Copyright Reserved For <strong><span>www.govmnti.com</span></strong>.
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+
+    <!-- my e-file modal start -->
+    <div class="modal fade" id="my-eFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="../html/ind-eFile.html" class="btn btn-primary red-btn mt-2 w-100">
+                                    Individual
+                                </a>
+                            </div>
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="../html/cor-eFile.html" class="btn btn-primary blue-btn mt-2 w-100">
+                                    Corporate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my efile modal end -->
+
+    <!-- addvertisng select modal start -->
+    <div class="modal fade" id="addver-select" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="html/My-GovmnTi.html" class="btn btn-primary red-btn mt-2 w-100">
+                                    Registered
+                                </a>
+                            </div>
+                            <div class="select-btn mx-auto col-sm-6">
+                                <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
+                                    data-target="#addver-regester">
+                                    Not Registered
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addvertisng select modal end -->
+
+    <!-- addver regester Modal start-->
+    <div class="modal fade" id="addver-regester" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="first-name">first name</label>
+                                    <input type="text" class="form-control" id="first-name" placeholder="first name"
+                                        required>
+                                </div>
+                            </div> <!-- first name-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="mobile-num">mobile number</label>
+                                    <input type="number" class="form-control" id="mobile-num"
+                                        placeholder="mobile number" required>
+                                </div>
+                            </div> <!-- mobile -->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="tel-num">tel. number</label>
+                                    <input type="tel" class="form-control" id="tel-num" placeholder="tel. number"
+                                        required>
+                                </div>
+                            </div><!-- tel num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="fax-num">fax number</label>
+                                    <input type="number" class="form-control" id="fax-num" placeholder="fax number"
+                                        required>
+                                </div>
+                            </div> <!-- fax num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="email">email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn red-btn mt-4 w-100 addver-confirm" data-toggle="modal"
+                        data-target="#addver-text" disabled>
+                        confirm
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addver regester Modal end-->
+
+    <!-- addver text Modal start-->
+    <div class="modal fade" id="addver-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>GovmnTi Administration would like to thank you for your trust to advertise with us</p>
+                    <p>Our sales department will call you soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addver text Modal end-->
+
+    <!-- assets files -->
+    <script src="../js/assets/jquery-3.3.1.min.js"></script> <!-- JQ-->
+    <script src="../js/assets/popper.min.js"></script> <!-- popper-->
+    <script src="../js/assets/bootstrap.min.js"></script> <!-- bootstrap-->
+    <script src="../js/assets/aos.js"></script> <!-- aos animation-->
+    <!-- font awosme-->
+    <script src="../js/assets/all.min.js"></script>
+    <script src="../js/assets/fontawesome.min.js"></script>
+    <!-- font awosme-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

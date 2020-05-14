@@ -1,0 +1,64 @@
+.cities-section .city-block .card, .cities-section .city-block .card:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.cities-section .city-block .card {
+  background: #fed890 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 10px 10px 6px #00000029;
+          box-shadow: 10px 10px 6px #00000029;
+}
+
+.cities-section .city-block .card:hover {
+  -webkit-box-shadow: 5px 5px 2px #00000029;
+          box-shadow: 5px 5px 2px #00000029;
+}
+
+.cities-section .city-block .card .card-body {
+  height: 120px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  background-color: unset;
+  border: none;
+}
+
+.cities-section .city-block .card .card-body .catagory-name {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.cities-section .city-block .card .card-body .catagory-name a {
+  font: 16px "RB";
+  color: #000000;
+  text-transform: capitalize;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.cities-section .city-block .card .card-border {
+  background: #fea700 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  height: 33px;
+  opacity: 0.27;
+}
+/*# sourceMappingURL=country-category.css.map */

@@ -1,0 +1,231 @@
+%trans {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+section {
+    padding: 0;
+}
+// flag section  start
+.flag-section {
+    padding-top: 0;
+    @media (min-width: 992px) {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    img {
+        width: 100%;
+        margin-top: 72px;
+    }
+}
+//  details section start
+.details-section {
+    @media (min-width: 992px) {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .inner-cont {
+        background: #0d1b23 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 15px;
+        padding: 10px 40px 0px;
+        text-align: left;
+        font: 20px/35px "RB";
+        color: white;
+        @media (max-width: 992px) {
+            text-align: center;
+            font: 16px/25px "RB";
+        }
+        .row {
+            justify-content: space-between;
+        }
+    }
+}
+/* cities section start */
+.cities-section {
+    @media (min-width: 992px) {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .select-btn {
+        .btn {
+            width: 100%;
+        }
+    }
+    .city-block {
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 10px 10px 6px #00000029;
+            img {
+                border-radius: 15px 15px 0 0;
+            }
+            .card-body {
+                border: 2px solid #fea700;
+                background-color: #fea700;
+                border-bottom: none;
+                padding: 0;
+                .city-name {
+                    .card-title {
+                        background: #fed890 0% 0% no-repeat padding-box;
+                        box-shadow: 10px 10px 6px #00000029;
+                        border-radius: 15px 15px 0 0;
+                        text-align: center;
+                        width: 100%;
+                        text-transform: capitalize;
+                        padding: 20px 10px;
+                        font: 25px "RB";
+                        max-height: 70px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: #000000;
+                        border: none;
+                        @extend %trans;
+                        &:hover {
+                            color: #c90000;
+                            @extend %trans;
+                        }
+                        @media (max-width: 992px) {
+                            padding: 10px 0;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .addto-gov {
+                a {
+                    width: 100%;
+                    font: 15px/29px "RB";
+                    background: #0d1b23 0% 0% no-repeat padding-box;
+                    border: 1px solid #707070;
+                    border-radius: 0px 0px 15px 15px;
+                }
+            }
+        }
+    }
+}
+/* service information model start */
+.modal.service-modal {
+    padding: 40px 27% !important;
+    @media (max-width: 1199px) {
+        padding: 40px 15% !important;
+    }
+    @media (max-width: 992px) {
+        padding: 40px 9% !important;
+    }
+    @media (max-width: 767px) {
+        padding: 40px 5% !important;
+    }
+    @media (max-width: 576px) {
+        padding: 40px 10px !important;
+    }
+    .modal-dialog {
+        .modal-content {
+            background: #ffffff 0% 0% no-repeat padding-box;
+            border: 1px solid #707070;
+            border-radius: 16px;
+            .modal-header {
+                background-color: #af0101;
+                border: none;
+                padding: 20px 30px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .close {
+                    align-self: flex-end;
+                }
+                h3 {
+                    font: 25px/27px "RB";
+                    color: white;
+                    text-transform: capitalize;
+                    @media (max-width: 576px) {
+                        font-size: 18px;
+                    }
+                    &:first-of-type {
+                        margin-top: -35px;
+                    }
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .modal-body {
+                form {
+                    .form-group {
+                        label {
+                            text-align: left;
+                            font: 20px/25px "RM";
+                            color: #000000;
+                        }
+                        input {
+                            background: #f1efef 0% 0% no-repeat padding-box;
+                            border-radius: 15px;
+                            box-shadow: none;
+                            padding: 10px;
+                        }
+                        .serv-phone {
+                            padding-right: 5px;
+                        }
+                        .serv-fax {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+            .modal-footer {
+                justify-content: center;
+                background: #ececec 0% 0% no-repeat padding-box;
+                border-radius: 0px 0px 15px 15px;
+                h4 {
+                    font: 25px "RM";
+                    color: #1d1a1a;
+                    margin-bottom: 15px;
+                    @media (max-width: 576px) {
+                        font-size: 20px;
+                    }
+                    span {
+                        text-transform: capitalize;
+                    }
+                }
+                .hidden-muni {
+                    display: none;
+                }
+                .muni-name {
+                    background: #ffffff 0% 0% no-repeat padding-box;
+                    border-radius: 15px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    &:hover {
+                        a {
+                            color: #af0101;
+                            @extend %trans;
+                        }
+                    }
+                    a {
+                        text-transform: capitalize;
+                        font: 18px "RM";
+                        color: #1d1a1a;
+                        @extend %trans;
+                        @extend %trans;
+                    }
+                }
+                .select-btn {
+                    button {
+                        padding: 5px 30px;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* service information model end */

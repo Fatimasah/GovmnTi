@@ -1,0 +1,52 @@
+/* eFile section start */
+.eFile-section {
+    @media (min-width: 1199px) {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .mini-data-blocks {
+        .appear-items {
+            .blue-text {
+                box-shadow: 0px 3px 6px #00000029;
+            }
+        }
+        .view-all {
+            color: #c90000;
+            text-shadow: 0px 3px 6px #00000029;
+            font: 18px "RB";
+            border: none;
+            background: unset;
+        }
+        .hidden-items {
+            display: none;
+        }
+    }
+
+    .data-block {
+        color: #0d1b23;
+        font: 16px "RB";
+        text-align: center;
+        background-color: #fcf3e2;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 15px;
+        padding: 10px;
+        min-height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .select-btn {
+        &:hover {
+            .btn {
+                background-color: #aeabab;
+                box-shadow: 10px 10px 20px #000000a6;
+            }
+        }
+    }
+    .helping-btn {
+        margin: 50px 0 0;
+    }
+}

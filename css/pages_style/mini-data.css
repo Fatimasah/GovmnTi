@@ -1,0 +1,60 @@
+/* eFile section start */
+@media (min-width: 1199px) {
+  .eFile-section {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.eFile-section .mini-data-blocks .appear-items .blue-text {
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+}
+
+.eFile-section .mini-data-blocks .view-all {
+  color: #c90000;
+  text-shadow: 0px 3px 6px #00000029;
+  font: 18px "RB";
+  border: none;
+  background: unset;
+}
+
+.eFile-section .mini-data-blocks .hidden-items {
+  display: none;
+}
+
+.eFile-section .data-block {
+  color: #0d1b23;
+  font: 16px "RB";
+  text-align: center;
+  background-color: #fcf3e2;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 15px;
+  padding: 10px;
+  min-height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.eFile-section .data-block p {
+  margin-bottom: 0;
+}
+
+.eFile-section .select-btn:hover .btn {
+  background-color: #aeabab;
+  -webkit-box-shadow: 10px 10px 20px #000000a6;
+          box-shadow: 10px 10px 20px #000000a6;
+}
+
+.eFile-section .helping-btn {
+  margin: 50px 0 0;
+}
+/*# sourceMappingURL=mini-data.css.map */

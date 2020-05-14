@@ -1,0 +1,284 @@
+.cities-section .city-block .card .card-body .city-name .card-title, .cities-section .city-block .card .card-body .city-name .card-title:hover, .modal.service-modal .modal-dialog .modal-content .modal-footer .muni-name:hover a, .modal.service-modal .modal-dialog .modal-content .modal-footer .muni-name a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section {
+  padding: 0;
+}
+
+.flag-section {
+  padding-top: 0;
+}
+
+@media (min-width: 992px) {
+  .flag-section {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.flag-section img {
+  width: 100%;
+  margin-top: 72px;
+}
+
+@media (min-width: 992px) {
+  .details-section {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.details-section .inner-cont {
+  background: #0d1b23 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  padding: 10px 40px 0px;
+  text-align: left;
+  font: 20px/35px "RB";
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .details-section .inner-cont {
+    text-align: center;
+    font: 16px/25px "RB";
+  }
+}
+
+.details-section .inner-cont .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* cities section start */
+@media (min-width: 992px) {
+  .cities-section {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.cities-section .select-btn .btn {
+  width: 100%;
+}
+
+.cities-section .city-block .card {
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 6px #00000029;
+          box-shadow: 10px 10px 6px #00000029;
+}
+
+.cities-section .city-block .card img {
+  border-radius: 15px 15px 0 0;
+}
+
+.cities-section .city-block .card .card-body {
+  border: 2px solid #fea700;
+  background-color: #fea700;
+  border-bottom: none;
+  padding: 0;
+}
+
+.cities-section .city-block .card .card-body .city-name .card-title {
+  background: #fed890 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 10px 10px 6px #00000029;
+          box-shadow: 10px 10px 6px #00000029;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  width: 100%;
+  text-transform: capitalize;
+  padding: 20px 10px;
+  font: 25px "RB";
+  max-height: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000000;
+  border: none;
+}
+
+.cities-section .city-block .card .card-body .city-name .card-title:hover {
+  color: #c90000;
+}
+
+@media (max-width: 992px) {
+  .cities-section .city-block .card .card-body .city-name .card-title {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+}
+
+.cities-section .city-block .card .addto-gov a {
+  width: 100%;
+  font: 15px/29px "RB";
+  background: #0d1b23 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 0px 0px 15px 15px;
+}
+
+/* service information model start */
+.modal.service-modal {
+  padding: 40px 27% !important;
+}
+
+@media (max-width: 1199px) {
+  .modal.service-modal {
+    padding: 40px 15% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal.service-modal {
+    padding: 40px 9% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal.service-modal {
+    padding: 40px 5% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal.service-modal {
+    padding: 40px 10px !important;
+  }
+}
+
+.modal.service-modal .modal-dialog .modal-content {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 16px;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-header {
+  background-color: #af0101;
+  border: none;
+  padding: 20px 30px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-header .close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-header h3 {
+  font: 25px/27px "RB";
+  color: white;
+  text-transform: capitalize;
+}
+
+@media (max-width: 576px) {
+  .modal.service-modal .modal-dialog .modal-content .modal-header h3 {
+    font-size: 18px;
+  }
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-header h3:first-of-type {
+  margin-top: -35px;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-header h3:last-of-type {
+  margin-bottom: 0;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-body form .form-group label {
+  text-align: left;
+  font: 20px/25px "RM";
+  color: #000000;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-body form .form-group input {
+  background: #f1efef 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 10px;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-body form .form-group .serv-phone {
+  padding-right: 5px;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-body form .form-group .serv-fax {
+  padding-left: 5px;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ececec 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-footer h4 {
+  font: 25px "RM";
+  color: #1d1a1a;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 576px) {
+  .modal.service-modal .modal-dialog .modal-content .modal-footer h4 {
+    font-size: 20px;
+  }
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-footer h4 span {
+  text-transform: capitalize;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-footer .hidden-muni {
+  display: none;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-footer .muni-name {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-footer .muni-name:hover a {
+  color: #af0101;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-footer .muni-name a {
+  text-transform: capitalize;
+  font: 18px "RM";
+  color: #1d1a1a;
+}
+
+.modal.service-modal .modal-dialog .modal-content .modal-footer .select-btn button {
+  padding: 5px 30px;
+  margin-top: 30px;
+}
+
+/* service information model end */
+/*# sourceMappingURL=country.css.map */

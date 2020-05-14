@@ -1,0 +1,155 @@
+.signIn-section {
+  margin-top: 70px;
+  padding-top: 20px;
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#ffa800), color-stop(61%, #fea700), color-stop(85%, #c48100), to(#805400)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(0deg, #ffa800 0%, #fea700 61%, #c48100 85%, #805400 100%) 0% 0% no-repeat padding-box;
+}
+
+.signIn-section form .logo-img {
+  width: 150px;
+}
+
+.signIn-section form .check-rem {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .signIn-section form .check-rem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.signIn-section form .check-rem .form-check {
+  /* checkbox aspect */
+  /* checked mark aspect */
+}
+
+.signIn-section form .check-rem .form-check [type="checkbox"]:not(:checked) + .check-label,
+.signIn-section form .check-rem .form-check [type="checkbox"]:checked + .check-label {
+  padding-left: 30px;
+}
+
+.signIn-section form .check-rem .form-check [type="checkbox"]:not(:checked) + .check-label:before,
+.signIn-section form .check-rem .form-check [type="checkbox"]:checked + .check-label:before {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.signIn-section form .check-rem .form-check [type="checkbox"]:not(:checked) + .check-label:after,
+.signIn-section form .check-rem .form-check [type="checkbox"]:checked + .check-label:after {
+  content: "\2713\0020";
+  left: 5px;
+  font-size: 15px;
+}
+
+.signIn-section form .check-rem label {
+  font: 14px "RB";
+  color: #0d1b23;
+  text-shadow: 0px 3px 6px #00000029;
+  opacity: 0.89;
+}
+
+.signIn-section form .check-rem a {
+  font: 14px "RB";
+  color: #0d1b23;
+  opacity: 0.89;
+}
+
+.signIn-section form .form-label-group input {
+  margin-bottom: 10px;
+  border: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+}
+
+.signIn-section form .form-label-group input::-webkit-input-placeholder {
+  font: 15px "RB";
+  letter-spacing: 0.32px;
+  color: #b5b5b5;
+  opacity: 0.6;
+}
+
+.signIn-section form .form-label-group input:-ms-input-placeholder {
+  font: 15px "RB";
+  letter-spacing: 0.32px;
+  color: #b5b5b5;
+  opacity: 0.6;
+}
+
+.signIn-section form .form-label-group input::-ms-input-placeholder {
+  font: 15px "RB";
+  letter-spacing: 0.32px;
+  color: #b5b5b5;
+  opacity: 0.6;
+}
+
+.signIn-section form .form-label-group input::placeholder {
+  font: 15px "RB";
+  letter-spacing: 0.32px;
+  color: #b5b5b5;
+  opacity: 0.6;
+}
+
+.signIn-section form .select-btn {
+  margin-bottom: unset;
+}
+
+#sign-origin {
+  padding: 40px 33% !important;
+}
+
+@media (max-width: 992px) {
+  #sign-origin {
+    padding: 40px 30% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #sign-origin {
+    padding: 40px 20% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #sign-origin {
+    padding: 40px 10% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #sign-origin .modal-dialog .modal-content .modal-body {
+    padding: 0 20px;
+  }
+}
+
+#sign-origin .modal-dialog .modal-content .selection-block {
+  text-align: center;
+}
+
+#sign-origin .modal-dialog .modal-content .selection-block h5 {
+  font: 20px "RB";
+  color: #c90000;
+  text-transform: capitalize;
+}
+
+#sign-origin .modal-dialog .modal-content .selection-block label {
+  margin-bottom: 0;
+}
+
+.modal .modal-dialog .modal-content .modal-body .selection-block .form-group .bootstrap-select > .dropdown-toggle {
+  padding: 12px 15px;
+}
+/*# sourceMappingURL=signIn.css.map */

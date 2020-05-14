@@ -1,0 +1,432 @@
+.eFile-section .eFile-blocks .e-block, .eFile-section .eFile-blocks .e-block:hover, .eFile-section .eFile-blocks .select-btn .journey-btn:hover, #otp-code .modal-dialog .modal-content .modal-body .resend-code a,
+#request-form .modal-dialog .modal-content .modal-body .resend-code a, #otp-code .modal-dialog .modal-content .modal-body .resend-code a:hover,
+#request-form .modal-dialog .modal-content .modal-body .resend-code a:hover, .legal .eFile-blocks .cards-container .card, .legal .eFile-blocks .cards-container .card:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* efile section start */
+.eFile-section {
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+}
+
+.eFile-section .title h2 {
+  font: 32px "PB";
+  color: #810a0d;
+  text-transform: capitalize;
+  text-shadow: 0px 3px 6px #00000029;
+}
+
+@media (max-width: 767px) {
+  .eFile-section .title h2 {
+    font-size: 28px;
+  }
+}
+
+.eFile-section .title h2 span {
+  font: 25px "PB";
+  letter-spacing: 0px;
+  color: #0d1b23;
+}
+
+.eFile-section .title p {
+  font: 18px "RB";
+  color: #0d1b23;
+  text-shadow: 0px 3px 6px #00000029;
+}
+
+.eFile-section .eFile-blocks {
+  background-color: #d8d8d440;
+  border-radius: 15px;
+  padding: 80px 140px;
+}
+
+@media (max-width: 992px) {
+  .eFile-section .eFile-blocks {
+    padding: 50px 50px;
+  }
+}
+
+.eFile-section .eFile-blocks .e-block {
+  width: 100%;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: capitalize;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border: 4px solid #ffffff;
+  border-radius: 15px;
+  font: 25px "RB";
+  color: #ffffff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.eFile-section .eFile-blocks .e-block a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+@media (max-width: 1199px) {
+  .eFile-section .eFile-blocks .e-block {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .eFile-section .eFile-blocks .e-block {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+.eFile-section .eFile-blocks .e-block:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.eFile-section .eFile-blocks .select-btn .journey-btn {
+  background: #ffffff8a;
+  -webkit-box-shadow: 10px 10px 20px #0000003d;
+          box-shadow: 10px 10px 20px #0000003d;
+  font: 24px "RB";
+  color: #c90000;
+}
+
+.eFile-section .eFile-blocks .select-btn .journey-btn:hover {
+  background: #0d1b23;
+  color: #ffffff;
+}
+
+/* efile section end */
+.eFile-form .modal-dialog .modal-content .modal-header h2 {
+  font: 35px "RB";
+  color: #0d1b23;
+  text-transform: capitalize;
+}
+
+/* cor file modal end*/
+/* otp code modal start*/
+#otp-code,
+#request-form {
+  padding: 0 35% !important;
+  overflow-y: unset;
+}
+
+@media (max-width: 992px) {
+  #otp-code,
+  #request-form {
+    padding: 0px 30% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #otp-code,
+  #request-form {
+    padding: 0px 25% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #otp-code,
+  #request-form {
+    padding: 0px 5% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #otp-code .modal-dialog .modal-content,
+  #request-form .modal-dialog .modal-content {
+    max-width: 250px;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+#otp-code .modal-dialog .modal-content .modal-header,
+#request-form .modal-dialog .modal-content .modal-header {
+  padding: 40px 50px 0px;
+}
+
+#otp-code .modal-dialog .modal-content .modal-body form,
+#request-form .modal-dialog .modal-content .modal-body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  margin: 0 auto;
+}
+
+#otp-code .modal-dialog .modal-content .modal-body form input,
+#request-form .modal-dialog .modal-content .modal-body form input {
+  width: 50px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  #otp-code .modal-dialog .modal-content .modal-body form input,
+  #request-form .modal-dialog .modal-content .modal-body form input {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+#otp-code .modal-dialog .modal-content .modal-body form input::-webkit-inner-spin-button, #otp-code .modal-dialog .modal-content .modal-body form input::-webkit-outer-spin-button,
+#request-form .modal-dialog .modal-content .modal-body form input::-webkit-inner-spin-button,
+#request-form .modal-dialog .modal-content .modal-body form input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+#otp-code .modal-dialog .modal-content .modal-body form input:focus, #otp-code .modal-dialog .modal-content .modal-body form input.focus,
+#request-form .modal-dialog .modal-content .modal-body form input:focus,
+#request-form .modal-dialog .modal-content .modal-body form input.focus {
+  border-color: #c90000;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#otp-code .modal-dialog .modal-content .modal-body .resend-code,
+#request-form .modal-dialog .modal-content .modal-body .resend-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#otp-code .modal-dialog .modal-content .modal-body .resend-code p,
+#request-form .modal-dialog .modal-content .modal-body .resend-code p {
+  margin: 0;
+  color: #0d1b23;
+  text-shadow: 0px 3px 6px #00000029;
+  font: 16px "RR";
+}
+
+@media (max-width: 576px) {
+  #otp-code .modal-dialog .modal-content .modal-body .resend-code p,
+  #request-form .modal-dialog .modal-content .modal-body .resend-code p {
+    font-size: 10px;
+  }
+}
+
+#otp-code .modal-dialog .modal-content .modal-body .resend-code a,
+#request-form .modal-dialog .modal-content .modal-body .resend-code a {
+  background-color: #cccccc;
+  -webkit-box-shadow: 6px 6px 6px #00000029;
+          box-shadow: 6px 6px 6px #00000029;
+  border-radius: 8px;
+  font: 16px "RR";
+  color: #c90000;
+  padding: 5px 10px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  #otp-code .modal-dialog .modal-content .modal-body .resend-code a,
+  #request-form .modal-dialog .modal-content .modal-body .resend-code a {
+    font-size: 10px;
+  }
+}
+
+#otp-code .modal-dialog .modal-content .modal-body .resend-code a:hover,
+#request-form .modal-dialog .modal-content .modal-body .resend-code a:hover {
+  color: #0d1b23;
+}
+
+#otp-code {
+  padding: 0 20% !important;
+}
+
+#otp-code .modal-dialog .modal-content .modal-body {
+  padding: 0 30%;
+}
+
+#request-form .hidden-confirm {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #request-form {
+    padding: 0 30% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #request-form .modal-dialog .modal-content {
+    max-width: unset;
+  }
+}
+
+#request-form .modal-dialog .modal-content .modal-header {
+  padding: 20px 20px 0px;
+}
+
+#request-form .modal-dialog .modal-content .modal-body {
+  padding: 0px 60px;
+  margin-top: -40px;
+}
+
+#request-form .modal-dialog .modal-content .modal-body .selection-block form input {
+  padding: 5px;
+}
+
+#request-form .modal-dialog .modal-content .modal-body .selection-block .blue-btn {
+  padding: 10px;
+}
+
+/* otp code modal end*/
+/* legal */
+/* efile section start */
+.legal .eFile-blocks {
+  padding: 0;
+  border-radius: unset;
+}
+
+.legal .eFile-blocks .col-3:first-of-type {
+  padding: 0 15px !important;
+}
+
+.legal .eFile-blocks .side-container {
+  background: #ffffff;
+}
+
+.legal .eFile-blocks .side-container .service-block {
+  height: 100px;
+}
+
+.legal .eFile-blocks .side-container .service-block a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  font: 20px "RB";
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .legal .eFile-blocks .side-container .service-block a {
+    font: 12px "RB";
+  }
+}
+
+.legal .eFile-blocks .cards-container {
+  padding: 30px 70px;
+}
+
+@media (max-width: 992px) {
+  .legal .eFile-blocks .cards-container {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .legal .eFile-blocks .cards-container {
+    padding: 20px;
+  }
+}
+
+.legal .eFile-blocks .cards-container .card {
+  height: 180px;
+  border: none;
+  -webkit-box-shadow: 10px 10px 10px #00000029;
+          box-shadow: 10px 10px 10px #00000029;
+  border-radius: 15px;
+}
+
+@media (max-width: 576px) {
+  .legal .eFile-blocks .cards-container .card {
+    height: 130px;
+  }
+}
+
+.legal .eFile-blocks .cards-container .card:hover {
+  -webkit-box-shadow: 5px 5px 5px #00000029;
+          box-shadow: 5px 5px 5px #00000029;
+}
+
+.legal .eFile-blocks .cards-container .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.legal .eFile-blocks .cards-container .card .card-body .card-title {
+  font: 16px "RB";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.legal .eFile-blocks .cards-container .card .card-body .select-btn .btn {
+  border: none;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "RB";
+  color: #fff9f9;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+/* efile section end */
+/*# sourceMappingURL=cor-eFile.css.map */

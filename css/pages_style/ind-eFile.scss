@@ -1,0 +1,25 @@
+/* efile section start */
+.eFile-section {
+    background: #f8f8f8;
+    .title {
+        h2 {
+            span {
+                color: #c90000;
+            }
+        }
+    }
+}
+//* cor-file modal start */
+.eFile-form {
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                h2 {
+                    color: #c90000;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+/* cor file modal end*/

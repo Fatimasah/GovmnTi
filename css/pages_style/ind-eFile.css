@@ -1,0 +1,16 @@
+/* efile section start */
+.eFile-section {
+  background: #f8f8f8;
+}
+
+.eFile-section .title h2 span {
+  color: #c90000;
+}
+
+.eFile-form .modal-dialog .modal-content .modal-header h2 {
+  color: #c90000;
+  text-transform: capitalize;
+}
+
+/* cor file modal end*/
+/*# sourceMappingURL=ind-eFile.css.map */

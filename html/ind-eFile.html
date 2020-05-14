@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-File</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../imgs/favicon.png">
+
+    <!-- font awosme-->
+    <link rel="stylesheet" href="../css/assets/all.min.css">
+    <link rel="stylesheet" href="../css/assets/fontawesome.min.css">
+    <!-- font awosme-->
+
+    <!-- assets files -->
+    <link rel="stylesheet" href="../css/assets/bootstrap.min.css"> <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/assets/aos.css"> <!-- aos animation-->
+    <link rel="stylesheet" href="../css/assets/icofont.min.css"> <!-- icofont-->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pages_style/signIn.css">
+    <link rel="stylesheet" href="../css/pages_style/cor-eFile.css">
+
+    <link rel="stylesheet" href="../css/pages_style/ind-eFile.css">
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex" style="max-width: 1350px !important;padding-right: 150px;">
+            <!-- <div class="logo mr-auto"> -->
+            <div class="logo-img">
+                <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+            </div>
+            <!-- </div> -->
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="../index.html">Home</a> </li>
+                    <li><a href="../html/My-GovmnTi.html">My GovmnTi </a> </li>
+                    <li><a class="nav-link" data-toggle="modal" data-target="#my-eFile">E-File</a> </li>
+                    <li><a class="nav-link" data-toggle="modal" data-target="#addver-select">Advertising</a> </li>
+
+                    <li><a href="signIn.html" style="color: #C90000;">SignIn/up</a> </li>
+                    <li class="drop-down"><a href="">Lang</a>
+                        <ul>
+                            <li><a href="{{url('en')}}"><img alt="sar" src="{{url('assets/img/usd.png')}}">English</a>
+                            </li>
+                            <li><a href="{{url('ar')}}"><img alt="sar" src="{{url('assets/img/sar.png')}}">Arabic</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href=""><img alt="usd" src="../imgs/ico.png"></a>
+                        <ul class="grid">
+                            <li class="grid-li"><a href="#about">Eng</a> </li>
+                            <li><a href="#team">Ar</a> </li>
+                            <li><a href="#team">Ar</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- start e-file section -->
+    <section class="eFile-section mt-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="my-3">my e-file <span>(Individual)</span></h2>
+                <p>E-File is a highly secured mini data center for your own use, you can create and have a deep
+                    insight at your all information with the government and any related institution in one place</p>
+            </div>
+            <div class="eFile-blocks">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="e-block grayBack mb-3"><a href="../html/indiviual-pages/id's.html">ID'S</a></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="e-block goldBack mb-3"><a
+                                href="../html/indiviual-pages/education.html">edication</a></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="e-block redBack mb-3"><a href="../html/indiviual-pages/work.html">work</a></div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="e-block turquoiseBack mb-3"><a href="../html/indiviual-pages/health.html">health</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="e-block darkBlue mb-3"><a href="../html/indiviual-pages/wealth.html">wealth</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="e-block skyBack mb-3"><a href="../html/indiviual-pages/services.html">Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-btn mt-5 mb-4">
+                    <button type="button" class="btn btn-primary journey-btn w-100" data-toggle="modal"
+                        data-target="#ind-form">
+                        Start Your Journey </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end e-file section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; All Copyright Reserved For <strong><span>www.govmnti.com</span></strong>.
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <!-- my e-file modal start -->
+    <div class="modal fade" id="my-eFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="ind-eFile.html" class="btn btn-primary red-btn mt-2 w-100">
+                                    Individual
+                                </a>
+                            </div>
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="cor-eFile.html" class="btn btn-primary blue-btn mt-2 w-100">
+                                    Corporate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my efile modal end -->
+
+    <!-- ind-form modal start -->
+    <div class="modal fade eFile-form" id="ind-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h2>Individual</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <form>
+                            <!-- <input type="text" pattern="\d*" maxlength="4"> -->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="national-num">national number</label>
+                                    <input type="number" class="form-control" id="national-num"
+                                        placeholder="national number" required>
+                                </div>
+                            </div> <!-- national num-->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="id-num">id number</label>
+                                    <input type="number" class="form-control" id="id-num" placeholder="id number"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="pass-num">passport number </label> <span>(preferred)</span>
+                                    <input type="number" class="form-control" id="pass-num"
+                                        placeholder="passport number (preferred)" required>
+                                </div>
+                            </div> <!-- id and pass number-->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="birth">date of birth</label>
+                                    <input type="date" class="form-control" id="birth" required>
+                                </div>
+                                <div class="form-group col-md-6 sec_">
+                                    <label for="gender">gender</label>
+                                    <select id="gender" class="form-control selectpicker" required>
+                                        <option value="" hidden></option>
+                                        <option>female</option>
+                                        <option>male</option>
+                                        <option>prefer not to say</option>
+                                    </select>
+                                </div>
+                            </div> <!-- date of birth and gender-->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="email">email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="contact-num">contact number</label>
+                                    <input type="tel" class="form-control" id="contact-num" placeholder="contact number"
+                                        required>
+                                </div>
+                            </div><!-- email and contact number-->
+                            <div class="select-btn mx-auto mt-4">
+                                <button type="submit" id="send-otp" class="btn btn-primary red-btn mt-4 w-100"
+                                    data-toggle="modal" data-target="#otp-code" disabled>
+                                    Send OTP to Registered Mobile
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ind-form modal end -->
+
+    <!-- otp-code modal start-->
+    <div class="modal fade" id="otp-code" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <form>
+                            <input id="codeBox1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)"
+                                onfocus="onFocusEvent(1)">
+                            <input id="codeBox2" type="number" maxlength="1" onkeyup="onKeyUpEvent(2, event)"
+                                onfocus="onFocusEvent(2)">
+                            <input id="codeBox3" type="number" maxlength="1" onkeyup="onKeyUpEvent(3, event)"
+                                onfocus="onFocusEvent(3)">
+                            <input id="codeBox4" type="number" maxlength="1" onkeyup="onKeyUpEvent(4, event)"
+                                onfocus="onFocusEvent(4)">
+                        </form>
+                        <div class="resend-code">
+                            <p>I Didn't recive the OTP</p>
+                            <a href="#">request</a>
+                        </div>
+
+
+                        <div class="select-btn mx-auto mt-4">
+                            <!-- <button class="btn btn-primary blue-btn mt-4 w-100">
+                                confirm </button> -->
+                            <a href="../html/indiviual-pages/id's.html" class="btn btn-primary red-btn mt-4 w-100">
+                                confirm </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- otp-code modal end-->
+
+    <!-- addvertisng select modal start -->
+    <div class="modal fade" id="addver-select" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="html/My-GovmnTi.html" class="btn btn-primary red-btn mt-2 w-100">
+                                    Registered
+                                </a>
+                            </div>
+                            <div class="select-btn mx-auto col-sm-6">
+                                <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
+                                    data-target="#addver-regester">
+                                    Not Registered
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addvertisng select modal end -->
+
+    <!-- addver regester Modal start-->
+    <div class="modal fade" id="addver-regester" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="first-name">first name</label>
+                                    <input type="text" class="form-control" id="first-name" placeholder="first name"
+                                        required>
+                                </div>
+                            </div> <!-- first name-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="mobile-num">mobile number</label>
+                                    <input type="number" class="form-control" id="mobile-num"
+                                        placeholder="mobile number" required>
+                                </div>
+                            </div> <!-- mobile -->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="tel-num">tel. number</label>
+                                    <input type="tel" class="form-control" id="tel-num" placeholder="tel. number"
+                                        required>
+                                </div>
+                            </div><!-- tel num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="fax-num">fax number</label>
+                                    <input type="number" class="form-control" id="fax-num" placeholder="fax number"
+                                        required>
+                                </div>
+                            </div> <!-- fax num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="email">email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn red-btn mt-4 w-100 addver-confirm" data-toggle="modal"
+                        data-target="#addver-text" disabled>
+                        confirm
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addver regester Modal end-->
+
+    <!-- addver text Modal start-->
+    <div class="modal fade" id="addver-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>GovmnTi Administration would like to thank you for your trust to advertise with us</p>
+                    <p>Our sales department will call you soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addver text Modal end-->
+
+
+
+    <!-- assets files -->
+    <script src="../js/assets/jquery-3.3.1.min.js"></script> <!-- JQ-->
+    <script src="../js/assets/popper.min.js"></script> <!-- popper-->
+    <script src="../js/assets/bootstrap.min.js"></script> <!-- bootstrap-->
+    <script src="../js/assets/aos.js"></script> <!-- aos animation-->
+    <!-- font awosme-->
+    <script src="../js/assets/all.min.js"></script>
+    <script src="../js/assets/fontawesome.min.js"></script>
+    <!-- font awosme-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script> -->
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

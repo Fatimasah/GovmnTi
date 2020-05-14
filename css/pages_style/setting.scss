@@ -1,0 +1,242 @@
+%trans {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* profile section start */
+.profile-section {
+    .title {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .profile-container {
+        background: #e5e5e4;
+        padding: 0 7%;
+        @media (max-width: 992px) {
+            padding: 0 2%;
+        }
+        @media (max-width: 767px) {
+            padding: 0 15px;
+        }
+        .profile-info {
+            padding-top: unset;
+            .profile-setting {
+                h3,
+                h5 {
+                    a {
+                        color: #404040;
+                        @extend %trans;
+                        &:hover {
+                            color: #c90000;
+                            @extend %trans;
+                        }
+                        svg {
+                            margin: 0 10px;
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+                h3 {
+                    a {
+                        color: #0d1b23;
+                        text-shadow: 0px 3px 6px #00000029;
+                        font-family: "RB";
+                        font-size: 24px;
+                        text-transform: capitalize;
+                        align-items: center;
+                        display: flex;
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+                ul {
+                    li {
+                        a {
+                            text-transform: capitalize;
+                            margin-left: 45px;
+                            font: 14px "RR";
+                            &.active,
+                            &:hover {
+                                color: #c90000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .profile-form {
+            margin-left: 0;
+            .info-container {
+                form {
+                    padding: 30px 60px;
+                    @media (max-width: 1199px) {
+                        padding: 30px;
+                    }
+                    @media (max-width: 992px) {
+                        padding: 20px;
+                    }
+                    h5 {
+                        letter-spacing: 0.3px;
+                        color: #0d1b23;
+                        font: 24px "RB";
+                        text-transform: capitalize;
+                    }
+                    p {
+                        color: #707070;
+                        font: 14px "RR";
+                    }
+                    .profile-img {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 40px;
+                        @media (max-width: 1199px) {
+                            flex-direction: column;
+                        }
+                        .img-txt {
+                            @media (max-width: 1199px) {
+                                order: 2;
+                            }
+                            p {
+                                margin: 20px 0;
+                                &:first-of-type {
+                                    color: #707070;
+                                    font: 14px "RR";
+                                }
+                                &:last-of-type {
+                                    color: #707070;
+                                    font: 14px "RM";
+                                    span {
+                                        margin-right: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        #img-upload {
+                            display: none;
+                        }
+                        #user-img {
+                            cursor: pointer;
+                        }
+                        #img-container {
+                            width: 150px;
+                            height: 150px;
+                            border: 1px solid #707070;
+                            overflow: hidden;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            border-radius: 50%;
+                            @media (max-width: 1199px) {
+                                margin: 20px 0;
+                                order: 1;
+                            }
+                        }
+                        #img-container {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                max-width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .user-info {
+                        .form-group {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            margin-bottom: 20px;
+                            label {
+                                width: 20%;
+                                letter-spacing: 0.3px;
+                                color: #0d1b23;
+                                font: 16px "RB";
+                                margin-bottom: 0;
+                                text-transform: capitalize;
+                                @media (max-width: 992px) {
+                                    width: 30%;
+                                    font-size: 14px;
+                                }
+                            }
+                            input {
+                                background: #ffffff 0% 0% no-repeat padding-box;
+                                box-shadow: 0px 3px 6px #00000029;
+                                border-radius: 10px;
+                                border: none;
+                                &::placeholder {
+                                    text-transform: capitalize;
+                                    font: 16px;
+                                    font-family: "RM";
+                                    color: #cfcfcf;
+                                }
+                            }
+
+                            .bootstrap-select > .dropdown-toggle {
+                                padding: 6px 12px;
+                            }
+                            span {
+                                font: 16px/35px "RR";
+                            }
+                        }
+                        .password-block {
+                            flex-direction: column;
+                            align-items: unset;
+                            div {
+                                display: flex;
+                                align-items: center;
+                            }
+                            small {
+                                margin: 5px 130px 0;
+                                color: #c90000;
+                                font-size: 11px;
+                                font-family: "RM";
+                                @media (max-width: 1199px) {
+                                    margin: 5px 25% 0;
+                                }
+                            }
+                        }
+                    }
+                    .contact-info {
+                        .form-group {
+                            margin-bottom: 10px;
+                            label {
+                                font-size: 14px;
+                                @media (max-width: 992px) {
+                                    font-size: 12px;
+                                }
+                            }
+                            input {
+                                &::placeholder {
+                                    font: "RR" 10px;
+                                    color: #e1e1e1;
+                                }
+                            }
+                        }
+                    }
+                    .select-btn {
+                        width: 80%;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+/* profile section end */
+
+/* setting-cor css */
+
+.profile-section .profile-container .profile-form .info-container form .corporate-info  .form-group label{
+    width: 40%;
+}
+.profile-section .profile-container .profile-form .info-container form .corporate-info .password-block small{
+    margin: 5px 30% 0;
+}

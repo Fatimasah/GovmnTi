@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,yBAAyB;AACzB,AAAA,cAAc,CAAC;EACX,UAAU,EAAE,OAAO;CAQtB;;AATD,AAIY,cAJE,CAEV,MAAM,CACF,EAAE,CACE,IAAI,CAAC;EACD,KAAK,EAAE,OAAO;CACjB;;AAKb,AAIgB,WAJL,CACP,aAAa,CACT,cAAc,CACV,aAAa,CACT,EAAE,CAAC;EACC,KAAK,EAAE,OAAO;EACd,cAAc,EAAE,UAAU;CAC7B;;AAKjB,uBAAuB",
+    "sources": [
+        "ind-eFile.scss"
+    ],
+    "names": [],
+    "file": "ind-eFile.css"
+}

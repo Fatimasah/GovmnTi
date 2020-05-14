@@ -1,0 +1,200 @@
+%trans {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* profile section start */
+.profile-section {
+    .title {
+        background-color: #f8f8f8;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .profile-container {
+        background: #e5e5e4;
+        padding: 0 7%;
+        @media (max-width: 992px) {
+            padding: 0 2%;
+        }
+        @media (max-width: 767px) {
+            padding: 0 15px;
+        }
+        .profile-info {
+            padding-top: 20px;
+            .profile-img {
+                border-radius: 50%;
+                @media (max-width: 767px) {
+                    text-align: center;
+                }
+                img {
+                    max-width: 100%;
+                    border-radius: 50%;
+                    @media (max-width: 767px) {
+                        width: 75%;
+                    }
+                }
+            }
+            .profile-name {
+                text-align: center;
+                // border-bottom: 1px solid #70707069;
+                margin-bottom: 50px;
+                h3 {
+                    font-family: "PB";
+                    font-size: 18px;
+
+                    text-transform: capitalize;
+                    margin-top: 10px;
+                    color: #000000;
+                }
+                p {
+                    color: #5070d9;
+                    font-family: "RB";
+                    font-size: 14px;
+                    svg {
+                        color: #fea700;
+                    }
+                }
+            }
+            .profile-setting {
+                margin-top: 15px;
+                h5,
+                h5 a {
+                    font-family: "RB";
+                    font-size: 16px;
+                    text-align: left;
+                    text-transform: capitalize;
+                    color: #000000;
+                }
+                ul {
+                    li {
+                        a {
+                            font-family: "RR";
+                            text-transform: capitalize;
+                            color: #000000;
+                            margin-left: 45px;
+                        }
+                    }
+                }
+            }
+        }
+        .profile-form {
+            background-color: #f8f8f8;
+            @media (min-width: 992px) {
+                margin-left: 70px;
+            }
+            @media (max-width: 991px) {
+                margin-left: 10px;
+            }
+            @media (max-width: 767px) {
+                margin-left: unset;
+            }
+            .blue-text {
+                font-size: 25px;
+                border-radius: 0;
+                box-shadow: none;
+                margin-bottom: 15px;
+                background: #7a7b7d;
+            }
+            .country-block {
+                border-bottom: 1px solid #70707069;
+                .country-name {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    img {
+                        max-width: 100%;
+                        margin-right: 5px;
+                    }
+                    h6 {
+                        color: #0d1b23;
+                        font: 20px "RB";
+                        text-transform: capitalize;
+                        margin-bottom: 0;
+                    }
+                }
+                .country-services {
+                    display: flex;
+                    flex-direction: column;
+                    .services-type,
+                    .hidden-services {
+                        p {
+                            height: 42px;
+                            background-color: #ffffff;
+                            border: 1px solid #707070;
+                            border-radius: 10px;
+                            text-align: center;
+                            padding: 10px;
+                            font: 16px "RB";
+                            letter-spacing: 0.28px;
+                            color: #0d1b23;
+                            text-transform: capitalize;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            @media (max-width: 576px) {
+                                padding: 5px;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                    .hidden-services {
+                        display: none;
+                    }
+                    .serv-links,
+                    .btn {
+                        display: inline-flex;
+                        margin: 0;
+                        font-size: 15px;
+                        height: 42px;
+                        width: 130px;
+                        @media (max-width: 767px) {
+                            font-size: 10px !important;
+                            height: 30px;
+                            width: 100px;
+                        }
+                    }
+                    .btn {
+                        align-self: flex-end;
+                        margin-top: -40px !important;
+                        color: var(--whiteColor);
+                        border: none;
+                        text-transform: capitalize;
+                        padding: 10px 10px;
+                        background-color: #c90000;
+                        box-shadow: 10px 10px 20px #000000a6;
+                        border-radius: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        @extend %trans;
+                        @media (max-width: 767px) {
+                            margin-top: -30px !important;
+                        }
+                        &:hover {
+                            background-color: #0d1b23;
+                            @extend %trans;
+                        }
+                    }
+                    .serv-links {
+                        border-radius: 10px;
+                        padding: 10px;
+                        font-family: "RM";
+                        align-self: flex-start;
+                    }
+                }
+            }
+        }
+        .advertise-place {
+            height: 100%;
+            p {
+                background: cornsilk;
+                padding: 10px;
+                // margin-top: 20px;
+                height: 100%;
+            }
+        }
+    }
+}
+/* profile section end */
+//00970592103594

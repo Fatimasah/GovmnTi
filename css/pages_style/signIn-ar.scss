@@ -1,0 +1,32 @@
+// signIn section start
+.signIn-section {
+    margin-top: 70px;
+    padding-top: 20px;
+    background: transparent linear-gradient(0deg, #ffa800 0%, #fea700 61%, #c48100 85%, #805400 100%) 0% 0% no-repeat
+        padding-box;
+    form {
+        .logo-img {
+            width: 150px;
+        }
+        .check-rem {
+            justify-content: space-between;
+            .form-check {
+                [type="checkbox"]:not(:checked) + .check-label,
+                [type="checkbox"]:checked + .check-label {
+                    padding-right: 30px;
+                    padding-left: unset;
+                }
+
+                /* checked mark aspect */
+                [type="checkbox"]:not(:checked) + .check-label:after,
+                [type="checkbox"]:checked + .check-label:after {
+                    content: "\2713\0020";
+                    left: unset;
+                    right: 5px;
+                }
+            }
+        }
+    }
+}
+
+// signIn section end

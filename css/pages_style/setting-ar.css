@@ -1,0 +1,12 @@
+/* profile section start */
+.profile-section .profile-container .profile-info {
+  padding-top: unset;
+}
+
+.profile-section .profile-container .profile-form .info-container form .profile-img .img-txt p:last-of-type span {
+  margin-left: 20px;
+  margin-right: unset;
+}
+
+/* profile section end */
+/*# sourceMappingURL=setting-ar.css.map */

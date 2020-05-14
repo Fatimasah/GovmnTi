@@ -1,0 +1,18 @@
+/* profile section start */
+.profile-section .profile-container .profile-info .profile-setting h5 {
+  text-align: right;
+}
+
+.profile-section .profile-container .profile-info .profile-setting ul li a {
+  margin-left: unset;
+  margin-right: 45px;
+  text-align: right;
+}
+
+.profile-section .profile-container .country-block .country-name img {
+  margin-left: 5px;
+  margin-right: unset;
+}
+
+/* profile section end */
+/*# sourceMappingURL=My-GovmnTi-ar.css.map */
