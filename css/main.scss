@@ -287,40 +287,6 @@ body {
 }
 // end navbar section
 
-// start adver-section
-.adver-section {
-    height: 100%;
-    padding-top: 200px;
-    // padding-bottom: ;
-    background-image: linear-gradient(#c48100, #ffa800);
-    .adver-text {
-        h1 {
-            font-size: 48px;
-            line-height: 1.5;
-            // letter-spacing: -0.5px;
-            color: var(--whiteColor);
-            font-family: "PB";
-            span {
-                color: var(--redColor);
-            }
-        }
-        p {
-            font-size: 25px;
-            font-family: "RI";
-            color: var(--whiteColor);
-            padding-right: 145px;
-        }
-    }
-    .select-div {
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
-// end adver-section
-
 /* header */
 
 header {

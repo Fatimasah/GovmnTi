@@ -1,5 +1,6 @@
 // signIn section start
 .signIn-section {
+    height: 100%;
     margin-top: 70px;
     padding-top: 20px;
     background: transparent linear-gradient(0deg, #ffa800 0%, #fea700 61%, #c48100 85%, #805400 100%) 0% 0% no-repeat
@@ -11,7 +12,7 @@
         .check-rem {
             justify-content: space-between;
             white-space: nowrap;
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 flex-direction: column;
                 align-items: center;
             }
@@ -74,20 +75,21 @@
 // sign-origin modal start
 #sign-origin {
     padding: 40px 33% !important;
-    @media(max-width:992px){
+    @media (max-width: 992px) {
         padding: 40px 30% !important;
     }
-    @media(max-width:767px){
+    @media (max-width: 767px) {
         padding: 40px 20% !important;
     }
-    @media(max-width:576px){
+    @media (max-width: 576px) {
         padding: 40px 10% !important;
     }
     .modal-dialog {
         .modal-content {
-            .modal-body{
-                @media(max-width: 992px){padding: 0 20px;}
-                
+            .modal-body {
+                @media (max-width: 992px) {
+                    padding: 0 20px;
+                }
             }
             .selection-block {
                 text-align: center;
@@ -99,7 +101,6 @@
                 label {
                     margin-bottom: 0;
                 }
-                
             }
         }
     }
