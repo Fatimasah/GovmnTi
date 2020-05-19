@@ -469,6 +469,13 @@ header .logo-img img {
   text-shadow: 0px 3px 6px #00000029;
 }
 
+@media (max-width: 992px) {
+  .modal .modal-dialog .modal-content .modal-body form .form-group label,
+  .modal .modal-dialog .modal-content .modal-body .selection-block .form-group label {
+    font-size: 14px;
+  }
+}
+
 .modal .modal-dialog .modal-content .modal-body form .form-group span,
 .modal .modal-dialog .modal-content .modal-body .selection-block .form-group span {
   font: 16px/35px "RR";
@@ -625,7 +632,9 @@ header .logo-img img {
 }
 
 .form-check [type="checkbox"]:not(:checked),
-.form-check [type="checkbox"]:checked {
+.form-check [type="checkbox"]:checked,
+.form-check [type="radio"]:not(:checked),
+.form-check [type="radio"]:checked {
   /* left: -9999px; */
   -webkit-appearance: none;
   background: none;
@@ -636,14 +645,18 @@ header .logo-img img {
 }
 
 .form-check [type="checkbox"]:not(:checked) + .check-label,
-.form-check [type="checkbox"]:checked + .check-label {
+.form-check [type="checkbox"]:checked + .check-label,
+.form-check [type="radio"]:not(:checked) + .check-label,
+.form-check [type="radio"]:checked + .check-label {
   position: relative;
-  padding-left: 75px;
+  padding: 5px 50px;
   cursor: pointer;
 }
 
 .form-check [type="checkbox"]:not(:checked) + .check-label:before,
-.form-check [type="checkbox"]:checked + .check-label:before {
+.form-check [type="checkbox"]:checked + .check-label:before,
+.form-check [type="radio"]:not(:checked) + .check-label:before,
+.form-check [type="radio"]:checked + .check-label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -658,14 +671,18 @@ header .logo-img img {
 
 @media (max-width: 767px) {
   .form-check [type="checkbox"]:not(:checked) + .check-label:before,
-  .form-check [type="checkbox"]:checked + .check-label:before {
+  .form-check [type="checkbox"]:checked + .check-label:before,
+  .form-check [type="radio"]:not(:checked) + .check-label:before,
+  .form-check [type="radio"]:checked + .check-label:before {
     height: 40px;
     width: 45px;
   }
 }
 
 .form-check [type="checkbox"]:not(:checked) + .check-label:after,
-.form-check [type="checkbox"]:checked + .check-label:after {
+.form-check [type="checkbox"]:checked + .check-label:after,
+.form-check [type="radio"]:not(:checked) + .check-label:after,
+.form-check [type="radio"]:checked + .check-label:after {
   content: "\2713\0020";
   position: absolute;
   left: 15px;
@@ -679,36 +696,44 @@ header .logo-img img {
 
 @media (max-width: 767px) {
   .form-check [type="checkbox"]:not(:checked) + .check-label:after,
-  .form-check [type="checkbox"]:checked + .check-label:after {
+  .form-check [type="checkbox"]:checked + .check-label:after,
+  .form-check [type="radio"]:not(:checked) + .check-label:after,
+  .form-check [type="radio"]:checked + .check-label:after {
     left: 15px;
   }
 }
 
-.form-check [type="checkbox"]:not(:checked) + .check-label:after {
+.form-check [type="checkbox"]:not(:checked) + .check-label:after,
+.form-check [type="radio"]:not(:checked) + .check-label:after {
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
 
-.form-check [type="checkbox"]:checked + .check-label:after {
+.form-check [type="checkbox"]:checked + .check-label:after,
+.form-check [type="radio"]:checked + .check-label:after {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
 .form-check [type="checkbox"]:disabled:not(:checked) + .check-label:before,
-.form-check [type="checkbox"]:disabled:checked + .check-label:before {
+.form-check [type="checkbox"]:disabled:checked + .check-label:before,
+.form-check [type="radio"]:disabled:not(:checked) + .check-label:before,
+.form-check [type="radio"]:disabled:checked + .check-label:before {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-color: #bbb;
   background-color: #ddd;
 }
 
-.form-check [type="checkbox"]:disabled:checked + .check-label:after {
+.form-check [type="checkbox"]:disabled:checked + .check-label:after,
+.form-check [type="radio"]:disabled:checked + .check-label:after {
   color: #999;
 }
 
-.form-check [type="checkbox"]:disabled + .check-label {
+.form-check [type="checkbox"]:disabled + .check-label,
+.form-check [type="radio"]:disabled + .check-label {
   color: #aaa;
 }
 

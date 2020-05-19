@@ -29,6 +29,12 @@ $(document).ready(function () {
         $(this).prev('.hidden-items').slideToggle(400);
     });
 
+     // view all privacy policy
+     $(".see-more").on('click', function(){
+        $(".hidden-txt").collapse('show');
+        $(this).hide();
+    });
+
     // Hide the sign-origin Modal 
     $(".next-btn").click(function () {
         console.log(
@@ -166,6 +172,11 @@ $(document).ready(function () {
     $("#img-upload").change(function () {
         fasterPreview(this);
     });
+
+
+
+
+    
 
 });
 
