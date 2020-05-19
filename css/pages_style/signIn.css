@@ -217,4 +217,8 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+#privacy-policy .modal-dialog .modal-content .modal-body .see-more svg {
+  margin: 0 5px;
+}
 /*# sourceMappingURL=signIn.css.map */

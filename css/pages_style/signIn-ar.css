@@ -31,4 +31,8 @@
   left: unset;
   right: 5px;
 }
+
+#privacy-policy .modal-dialog .modal-content .modal-body {
+  text-align: right;
+}
 /*# sourceMappingURL=signIn-ar.css.map */
