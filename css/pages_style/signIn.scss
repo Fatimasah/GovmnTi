@@ -142,8 +142,12 @@
                         color: #c90000;
                     }
                 }
-                .hidden-txt {
-                    // display: none;
+                .see-more {
+                    color: #c90000;
+                    background: unset;
+                    border: none;
+                    display: flex;
+                    align-items: center;
                 }
             }
         }
