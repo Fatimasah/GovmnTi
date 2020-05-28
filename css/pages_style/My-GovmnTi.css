@@ -7,7 +7,8 @@
 .profile-section .title {
   background-color: #f8f8f8;
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 50px;
+  /* edit */
 }
 
 .profile-section .profile-container {
@@ -88,6 +89,10 @@
   color: #000000;
 }
 
+.profile-section .profile-container .profile-info .profile-setting .privacy h5 {
+  cursor: pointer;
+}
+
 .profile-section .profile-container .profile-info .profile-setting ul li a {
   font-family: "RR";
   text-transform: capitalize;
@@ -95,8 +100,15 @@
   margin-left: 45px;
 }
 
+.profile-section .profile-container .profile-info .profile-setting ul li a:hover, .profile-section .profile-container .profile-info .profile-setting ul li a.active {
+  color: #c90000;
+}
+
 .profile-section .profile-container .profile-form {
   background-color: #f8f8f8;
+  /* added*/
+  min-height: 100%;
+  padding-bottom: 40px;
 }
 
 @media (min-width: 992px) {
@@ -124,10 +136,16 @@
           box-shadow: none;
   margin-bottom: 15px;
   background: #7a7b7d;
+  border: none;
 }
 
 .profile-section .profile-container .profile-form .country-block {
   border-bottom: 1px solid #70707069;
+}
+
+.profile-section .profile-container .profile-form .country-block:last-of-type {
+  /* added */
+  border-bottom: none;
 }
 
 .profile-section .profile-container .profile-form .country-block .country-name {

@@ -393,7 +393,7 @@ header {
                             color: #0d1b23;
                             text-transform: capitalize;
                             text-shadow: 0px 3px 6px #00000029;
-                            @media(max-width:992px){
+                            @media (max-width: 992px) {
                                 font-size: 14px;
                             }
                         }
@@ -447,7 +447,7 @@ header {
 }
 /* helping btn */
 .helping-btn {
-    margin: 80px 0 0;
+    margin: 150px 0 0;
     padding-bottom: 50px;
     .select-btn {
         .btn {
@@ -664,7 +664,8 @@ header {
 /* search modal end*/
 
 /* my efile modal strt */
-#my-eFile {
+#my-eFile,
+#add-country {
     padding: 40px 30% !important;
     overflow-y: scroll;
 
@@ -728,6 +729,39 @@ header {
                 p {
                     &:last-of-type {
                         color: #c90000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#privacy-policy {
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                color: #0d1b23;
+                h4 {
+                    font: 22px "RB";
+                    color: #c90000;
+                }
+                .sub-title {
+                    font: 18px "RB";
+                }
+                .condition-txt {
+                    font: 14px "RM";
+                    span {
+                        color: #c90000;
+                    }
+                }
+                .see-more {
+                    color: #c90000;
+                    background: unset;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    svg {
+                        margin: 0 5px;
                     }
                 }
             }

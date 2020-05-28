@@ -124,35 +124,3 @@
     cursor: pointer;
 }
 
-#privacy-policy {
-    .modal-dialog {
-        .modal-content {
-            .modal-body {
-                color: #0d1b23;
-                h4 {
-                    font: 22px "RB";
-                    color: #c90000;
-                }
-                .sub-title {
-                    font: 18px "RB";
-                }
-                .condition-txt {
-                    font: 14px "RM";
-                    span {
-                        color: #c90000;
-                    }
-                }
-                .see-more {
-                    color: #c90000;
-                    background: unset;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    svg{
-                        margin: 0 5px;
-                    }
-                }
-            }
-        }
-    }
-}

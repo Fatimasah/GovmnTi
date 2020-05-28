@@ -10,7 +10,7 @@
     .title {
         background-color: #f8f8f8;
         padding: 10px;
-        margin-top: 15px;
+        margin-top: 50px; /* edit */
     }
     .profile-container {
         background: #e5e5e4;
@@ -67,6 +67,11 @@
                     text-transform: capitalize;
                     color: #000000;
                 }
+                .privacy {
+                    h5 {
+                        cursor: pointer;
+                    }
+                }
                 ul {
                     li {
                         a {
@@ -74,6 +79,10 @@
                             text-transform: capitalize;
                             color: #000000;
                             margin-left: 45px;
+                            &:hover,
+                            &.active {
+                                color: #c90000;
+                            }
                         }
                     }
                 }
@@ -81,6 +90,10 @@
         }
         .profile-form {
             background-color: #f8f8f8;
+            /* added*/
+            min-height: 100%;
+            padding-bottom: 40px;
+
             @media (min-width: 992px) {
                 margin-left: 70px;
             }
@@ -96,9 +109,14 @@
                 box-shadow: none;
                 margin-bottom: 15px;
                 background: #7a7b7d;
+                border: none;
             }
             .country-block {
                 border-bottom: 1px solid #70707069;
+                &:last-of-type {
+                    /* added */
+                    border-bottom: none;
+                }
                 .country-name {
                     display: flex;
                     align-items: center;

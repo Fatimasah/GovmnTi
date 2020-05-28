@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My GovmnTi</title>
 
-    <title>GovmanTi Home</title>
     <link rel="shortcut icon" type="image/x-icon" href="../imgs/favicon.png">
 
     <!-- font awosme-->
@@ -24,8 +23,12 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pages_style/My-GovmnTi.css">
 
-    <link rel="stylesheet" href="../css/pages_style/signIn.css">
+    <link rel="stylesheet" href="../css/pages_style/groups.css">
+
+
+
 </head>
 
 <body>
@@ -67,46 +70,107 @@
     </header>
     <!-- End Header -->
 
-    <!-- signIn section start -->
-    <section class="signIn-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <form class="form-signin col-lg-4 col-md-6 col-sm-8">
-                    <div class="logo-img mx-auto mb-1">
-                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a></div>
-                    <div class="form-label-group">
-                        <input type="email" id="inputEmail" class="form-control px-3" placeholder="Email address"
-                            required="" autofocus="">
-                    </div>
-                    <div class="form-label-group">
-                        <input type="password" id="inputPassword" class="form-control px-3" placeholder="Password"
-                            required="">
-                    </div>
-                    <div class="select-btn">
-                        <button class="btn btn-lg btn-primary btn-block blue-btn signIn-btn mt-4 mb-2"
-                            type="submit">Sign
-                            in</button></div>
-                    <div class="check-rem d-flex">
-                        <div class="form-check p-0 d-flex mb-2">
-                            <input class="form-check-input" type="checkbox" id="remember">
-                            <label class="form-check-label check-label" for="remember"> Keep Me Signed In
-                            </label>
-                        </div>
-                        <a href="#">Forget Password?</a>
-                    </div>
-
-                    <div class="select-btn mt-5 mb-4">
-                        <button type="button" class="btn btn-primary w-100" data-toggle="modal"
-                            data-target="#sign-origin">
-                            sign up
-                        </button>
-                    </div>
-                </form>
+    <!-- start profile section -->
+    <section class="profile-section py-0">
+        <div class="c">
+            <div class="title text-center">
+                <!-- <h2 class="my-3">Welcome to GovmnTi</h2> -->
             </div>
+            <div class="profile-container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-6 px-md-0">
+                        <div class="profile-info">
+                            <div class="profile-img">
+                                <img src="../imgs/my-govmnti/man.png" alt="profile img">
+                                <div class="profile-name">
+                                    <h3 id="user-name">user name</h3>
+                                    <p><i class="fas fa-envelope"></i> Email</p>
+                                </div>
+                            </div>
 
+                            <div class="profile-setting">
+                                <h5><a href="setting-ind.html">setting</a> </h5>
+                                <div class="history">
+                                    <h5>history</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">-most used</a></li>
+                                        <li><a href="#">-most visited</a></li>
+                                    </ul>
+                                </div>
+                                <div class="groups">
+                                    <h5>groups</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="my-groups.html">-My Group</a></li>
+                                        <li><a href="all-groups.html">-All Groups</a></li>
+                                        <li><a href="#" class="active">-Create Group</a></li>
+                                    </ul>
+                                </div>
+                                <div class="privacy">
+                                    <h5 data-toggle="modal" data-target="#privacy-policy"> privacy policy</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="helping-btn text-center">
+                            <a href="#" class="need-help">Need Help?</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-sm-12 order-3 order-md-2 px-md-0">
+                        <div class="profile-form">
+                            <p class="blue-text mb-0 w-100" data-toggle="modal" data-target="#select-country">
+                                create groups
+                            </p>
+                            <p>Create, join a group to share thoughts, get consulting, solve a problem</p>
+
+                            <form class="px-md-5 px-1 py-4">
+                                <div class="form-row mb-3">
+                                    <div class="form-group col-12">
+                                        <label for="group-name">Group Name</label>
+                                        <input type="text" class="form-control" id="group-name" placeholder="Group Name"
+                                            required="">
+                                    </div>
+                                </div> <!-- Group Name -->
+                                <div class="form-row mb-3">
+                                    <div class="form-group col-12">
+                                        <label for="description">Description</label>
+                                        <input type="text" class="form-control" id="description"
+                                            placeholder="Description" required="">
+                                    </div>
+                                </div> <!-- Description -->
+                                <div class="form-row mb-3">
+                                    <div class="form-group col-12">
+                                        <label for="industry">Industry</label>
+                                        <input type="text" class="form-control" id="industry" placeholder="Industry"
+                                            required="">
+                                    </div>
+                                </div><!-- Industry -->
+                                <button type="submit" class="btn red-btn mt-4 w-100">
+                                    Send Notification
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 order-2 order-md-3 mb-3 px-md-0">
+                        <div class=" advertise-place text-center">
+                            <p>a<br>
+                                d<br>
+                                v<br>
+                                e<br>
+                                r<br>
+                                t<br>
+                                i<br>
+                                s<br>
+                                e<br>
+                                place</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         </div>
     </section>
-    <!-- signIn section end -->
+    <!-- end profile section -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -117,181 +181,6 @@
         </div>
     </footer><!-- End Footer -->
 
-    <!-- sign origin  Modal start-->
-    <div class="modal fade" id="sign-origin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid p-0">
-                        <div class="selection-block">
-                            <h5>original</h5>
-                            <div class="form-row">
-                                <div class="form-group col-md-6 sec_">
-                                    <label for="o-country">country</label>
-                                    <select id="o-country" class="form-control selectpicker" required>
-                                        <option value='' hidden>country</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-6 sec_">
-                                    <label for="o-city">city</label>
-                                    <select id="o-city" class="form-control selectpicker" required>
-                                        <option value='' hidden>city</option>
-                                        <option>11</option>
-                                        <option>22</option>
-                                        <option>33</option>
-                                    </select>
-                                </div>
-                            </div> <!-- origin-->
-                            <h5>Resident</h5>
-                            <div class="form-row">
-                                <div class="form-group col-md-6 sec_">
-                                    <label for="r-country">country</label>
-                                    <select id="r-country" class="form-control selectpicker" required>
-                                        <option value='' hidden>country</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-6 sec_">
-                                    <label for="r-city">city</label>
-                                    <select id="r-city" class="form-control selectpicker" required>
-                                        <option value='' hidden>city</option>
-                                        <option>11</option>
-                                        <option>22</option>
-                                        <option>33</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- resident-->
-                            <div class="select-btn mx-auto">
-                                <button type="submit" class="btn btn-primary next-btn blue-btn mt-4 w-100"
-                                    data-toggle="modal" data-target="#sign-up" disabled>
-                                    Next
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- sign origin Modal end-->
-
-    <!-- sign up Modal start-->
-    <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog " role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="logo-img">
-                    <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid p-0">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="first name">first name</label>
-                                    <input type="text" class="form-control" id="first name" placeholder="first name"
-                                        required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="last name">last name</label>
-                                    <input type="text" class="form-control" id="last name" placeholder="last name"
-                                        required>
-                                </div>
-                            </div> <!-- first and last name-->
-                            <div class="form-row">
-                                <div class="form-group col-md-6 sec_">
-                                    <label for="gender">gender</label>
-                                    <select id="gender" class="form-control selectpicker" required>
-                                        <option selected>femal</option>
-                                        <option>male</option>
-                                        <option>prefer not to say</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="date of birth">date of birth</label>
-                                    <input type="date" class="form-control" required>
-                                </div>
-                            </div> <!-- gender and D of B-->
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="email">email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="email" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="phone/mpbile">phone/mobile</label>
-                                    <input type="number" class="form-control" id="phone/mobile"
-                                        placeholder="phone/mobile" required>
-                                </div>
-                            </div> <!-- email and phone-->
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="password">password</label>
-                                    <input type="password" class="form-control" id="password" placeholder="password"
-                                        required>
-                                </div>
-                                <div class="form-group col-md-6 mb-5">
-                                    <label for="confirm password">confirm password</label>
-                                    <input type="password" class="form-control" id="confirm-password"
-                                        placeholder="confirm password" required>
-                                </div>
-                            </div><!-- password and confirm-->
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label class="mb-xl-2 mb-lg-5 mb-2 form-check-label check-label">privacy policy <a
-                                            data-toggle="modal" data-target="#privacy-policy">(click to
-                                            view)</a></label>
-                                </div>
-                                <div class="form-group form-group-check privacy-check col-12">
-                                    <div class="col-xl-6 col-lg-12 col-sm-6">
-                                        <div class="row mb-3 mb-sm-0">
-                                            <div class="form-check p-0 col-md-4 col-sm-6 col-12">
-                                                <input class="form-check-input" type="radio" id="agree" value="agree"
-                                                    name="privacyOption" required>
-                                                <label class="form-check-label check-label" for="agree"> Agree
-                                                </label>
-                                            </div>
-                                            <div class="form-check p-0 col-md-4 col-sm-6 col-12">
-                                                <input class="form-check-input" type="radio" id="decline"
-                                                    value="decline" name="privacyOption">
-                                                <label class="form-check-label check-label" for="decline"> Decline
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-check p-0 col-xl-6 col-lg-12 col-sm-6">
-                                        <input class="form-check-input" type="checkbox" id="test1">
-                                        <label class="form-check-label check-label" for="test1">
-                                            subscribe to news letter
-                                        </label>
-                                    </div>
-                                </div>
-                            </div><!-- company and check-->
-                            <div class="select-btn col-md-6 mx-auto mt-4">
-                                <button type="submit" class="btn btn-primary mt-4 w-100" data-toggle="modal">
-                                    Sgin Up
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- sign up Modal end-->
     <!-- my privacy modal start -->
     <div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
         aria-hidden="true">
@@ -340,7 +229,8 @@
                                     it immediately.
                                 </p>
                             </div>
-                            <button class="see-more mx-auto my-3">Continue Reading <i class="fas fa-angle-double-down"></i></button>
+                            <button class="see-more mx-auto my-3">Continue Reading <i
+                                    class="fas fa-angle-double-down"></i></button>
                             <div class="hidden-txt collapse">
                                 <p class="sub-title">
                                     We are pleased to summarize our privacy policy:
@@ -490,9 +380,7 @@
         </div>
     </div>
     <!-- my privacy modal end -->
-
-
-    <!-- my e-file modal start -->
+    <!-- my My E-File modal start -->
     <div class="modal fade" id="my-eFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -506,12 +394,12 @@
                     <div class="container-fluid p-0">
                         <div class="row">
                             <div class="select-btn mx-auto col-sm-6">
-                                <a href="ind-eFile.html" class="btn btn-primary red-btn mt-2 w-100">
+                                <a href="../html/ind-eFile.html" class="btn btn-primary red-btn mt-2 w-100">
                                     Individual
                                 </a>
                             </div>
                             <div class="select-btn mx-auto col-sm-6">
-                                <a href="cor-eFile.html" class="btn btn-primary blue-btn mt-2 w-100">
+                                <a href="../html/cor-eFile.html" class="btn btn-primary blue-btn mt-2 w-100">
                                     Corporate
                                 </a>
                             </div>
@@ -537,7 +425,7 @@
                     <div class="container-fluid p-0">
                         <div class="row">
                             <div class="select-btn mx-auto col-sm-6">
-                                <a href="html/My-GovmnTi.html" class="btn btn-primary red-btn mt-2 w-100">
+                                <a href="My-GovmnTi.html" class="btn btn-primary red-btn mt-2 w-100">
                                     Registered
                                 </a>
                             </div>
@@ -646,7 +534,9 @@
     <script src="../js/assets/all.min.js"></script>
     <script src="../js/assets/fontawesome.min.js"></script>
     <!-- font awosme-->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
 
     <script src="../js/main.js"></script>
 

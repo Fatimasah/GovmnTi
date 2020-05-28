@@ -42,7 +42,7 @@
                 <ul>
                     <li class="active"><a href="../index.html">Home</a> </li>
                     <li><a href="../html/My-GovmnTi.html">My GovmnTi </a> </li>
-                    <li><a class="nav-link" data-toggle="modal" data-target="#my-eFile">E-File</a> </li>
+                    <li><a class="nav-link" data-toggle="modal" data-target="#my-eFile">My E-File</a> </li>
                     <li><a class="nav-link" data-toggle="modal" data-target="#addver-select">Advertising</a> </li>
 
                     <li><a href="signIn.html" style="color: #C90000;">SignIn/up</a> </li>
@@ -97,9 +97,9 @@
                                 <div class="groups">
                                     <h5>groups</h5>
                                     <ul class="list-unstyled">
-                                        <li><a href="#">-My Group</a></li>
-                                        <li><a href="#">-All Groups</a></li>
-                                        <li><a href="#">-Create Group</a></li>
+                                        <li><a href="my-groups.html">-My Group</a></li>
+                                        <li><a href="all-groups.html">-All Groups</a></li>
+                                        <li><a href="create-group.html">-Create Group</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -110,9 +110,9 @@
                     </div>
                     <div class="col-lg-8 col-md-7 col-sm-12 order-3 order-md-2 px-md-0">
                         <div class="profile-form">
-                            <p class="blue-text mb-0 w-100">
+                            <button class="blue-text mb-0 w-100 " data-toggle="modal" data-target="#add-country">
                                 Add Country
-                            </p>
+                            </button>
                             <div class="country-block px-md-5 px-1 py-4">
                                 <div class="country-name">
                                     <img src="../imgs/my-govmnti/Jordan.svg" alt="country flag">
@@ -176,7 +176,7 @@
                                         </div>
                                     </div>
                                     <button class="serv-links">view all</button>
-                                    <a href="#" class="btn btn-primary red-btn my-0">Add E-Service</a>
+                                    <a href="add-E-Service.html" class="btn btn-primary red-btn my-0">Add E-Service</a>
                                 </div>
                             </div>
                             <div class="country-block px-md-5 px-1 py-4">
@@ -345,8 +345,227 @@
         </div>
     </footer><!-- End Footer -->
 
-
-    <!-- my e-file modal start -->
+    <!-- select-country Modal start-->
+    <div class="modal fade search-modal" id="select-country" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mt-2 pb-2">
+                    <div class="container-fluid p-0">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for country.."
+                                title="Type in a name">
+                        </div>
+                        <ul id="myUL">
+                            <li><a href=" 1">Denmark</a></li>
+                            <li><a href=" 2">Australia</a></li>
+                            <li><a href=" 3">Korea</a></li>
+                            <li><a href=" 4">Britain and Northern Ireland</a></li>
+                            <li><a href=" 5">Sweden</a></li>
+                            <li><a href=" 6">Finland </a></li>
+                            <li><a href=" 7">Singapore</a></li>
+                            <li><a href=" 8">New Zealand </a></li>
+                            <li><a href=" 9">France</a></li>
+                            <li><a href=" 10">Japan </a></li>
+                            <li><a href=" 11">USA</a></li>
+                            <li><a href=" 12">Germany</a></li>
+                            <li><a href=" 13">Netherlands </a></li>
+                            <li><a href=" 14">Norway </a></li>
+                            <li><a href=" 15">Switzerland </a></li>
+                            <li><a href=" 16">Estonia </a></li>
+                            <li><a href=" 17">Spain </a></li>
+                            <li><a href=" 18">Luxembourg</a></li>
+                            <li><a href=" 19">Iceland </a></li>
+                            <li><a href=" 20">Austria</a></li>
+                            <li><a href=" 21">United Arab Emirates</a></li>
+                            <li><a href=" 22">Ireland </a></li>
+                            <li><a href=" 23">Canada </a></li>
+                            <li><a href=" 24">Italy </a></li>
+                            <li><a href=" 25">Liechtenstein</a></li>
+                            <li><a href=" 26">Bahrain </a></li>
+                            <li><a href=" 27">Belgium </a></li>
+                            <li><a href=" 28">Monaco </a></li>
+                            <li><a href=" 29">Portugal </a></li>
+                            <li><a href=" 30">Malta </a></li>
+                            <li><a href=" 31">Israel </a></li>
+                            <li><a href=" 32">Federation </a></li>
+                            <li><a href=" 33">Poland </a></li>
+                            <li><a href=" 34">Uruguay </a></li>
+                            <li><a href=" 35">Greece </a></li>
+                            <li><a href=" 36">Cyprus </a></li>
+                            <li><a href=" 37">Slovenia </a></li>
+                            <li><a href=" 38">Belarus </a></li>
+                            <li><a href=" 39">Kazakhstan </a> </li>
+                            <li><a href=" 40">Lithuania </a></li>
+                            <li><a href=" 41">Kuwait </a></li>
+                            <li><a href=" 42">Chile </a></li>
+                            <li><a href=" 43">Argentina </a></li>
+                            <li><a href=" 44">Brazil </a></li>
+                            <li><a href=" 45">Hungary </a> </li>
+                            <li><a href=" 46">Barbados </a></li>
+                            <li><a href=" 47">Bulgaria </a></li>
+                            <li><a href=" 48">Malaysia</a></li>
+                            <li><a href=" 49">Serbia</a></li>
+                            <li><a href=" 50">Slovakia</a></li>
+                            <li><a href=" 51">Qatar </a></li>
+                            <li><a href=" 52">Saudi Arabia </a></li>
+                            <li><a href=" 53">Turkey </a></li>
+                            <li><a href=" 54">Czech </a></li>
+                            <li><a href=" 55">Croatia </a></li>
+                            <li><a href=" 56">Costa Rica </a></li>
+                            <li><a href=" 57">Latvia </a></li>
+                            <li><a href=" 58">Montenegro</a></li>
+                            <li><a href=" 59">Brunei Darussalam </a></li>
+                            <li><a href=" 60">Georgia</a></li>
+                            <li><a href=" 61">Colombia </a></li>
+                            <li><a href=" 62">Andorra </a></li>
+                            <li><a href=" 63">Oman </a></li>
+                            <li><a href=" 64">Mexico</a></li>
+                            <li><a href=" 65">China </a></li>
+                            <li><a href=" 66">Mauritius </a></li>
+                            <li><a href=" 67">Romania </a></li>
+                            <li><a href=" 68">South Africa </a></li>
+                            <li><a href=" 69">Moldova </a></li>
+                            <li><a href=" 70">Azerbaijan </a></li>
+                            <li><a href=" 71">Saint Kitts and Nevis </a></li>
+                            <li><a href=" 72">Bahamas</a></li>
+                            <li><a href=" 73">Thailand </a></li>
+                            <li><a href=" 74">Albania </a></li>
+                            <li><a href=" 75">Philippines</a></li>
+                            <li><a href=" 76">San Marino</a></li>
+                            <li><a href=" 77">Peru</a></li>
+                            <li><a href=" 78">Trinidad &amp; Tobago</a></li>
+                            <li><a href=" 79">Macedonia </a></li>
+                            <li><a href=" 80">Tunisia </a></li>
+                            <li><a href=" 81">Uzbekistan </a></li>
+                            <li><a href=" 82">Ukraine</a></li>
+                            <li><a href=" 83">Seychelles </a></li>
+                            <li><a href=" 84">Ecuador </a></li>
+                            <li><a href=" 85">Panama </a></li>
+                            <li><a href=" 86">Iran </a></li>
+                            <li><a href=" 87">Armenia </a></li>
+                            <li><a href=" 88">Viet Nam </a></li>
+                            <li><a href=" 89">Grenada </a></li>
+                            <li><a href=" 90">Antigua and Barbuda</a></li>
+                            <li><a href=" 91">Kyrgyzstan (Kyrgyzstan)</a></li>
+                            <li><a href=" 92">Mongolia </a></li>
+                            <li><a href=" 93">Commonwealth of Dominica </a></li>
+                            <li><a href=" 94">Sri Lanka </a></li>
+                            <li><a href=" 95">Dominican</a></li>
+                            <li><a href=" 96">India </a></li>
+                            <li><a href=" 97">Maldives</a></li>
+                            <li><a href=" 98">Jordan</a></li>
+                            <li><a href=" 99">Lebanon </a></li>
+                            <li><a href=" 100">El Salvador </a></li>
+                            <li><a href=" 101">Ghana </a></li>
+                            <li><a href=" 102">Fiji </a></li>
+                            <li><a href=" 103">Bolivia </a></li>
+                            <li><a href=" 104">Grenadines </a></li>
+                            <li><a href=" 105">Herzegovina </a></li>
+                            <li><a href=" 106">Venezuela</a></li>
+                            <li><a href=" 107">Indonesia </a></li>
+                            <li><a href=" 108">Paraguay </a></li>
+                            <li><a href=" 109">Tonga </a></li>
+                            <li><a href=" 110">Morocco </a></li>
+                            <li><a href=" 111">Palau </a>
+                            <li><a href=" 112">Cabo Verde </a></li>
+                            <li><a href=" 113">Guatemala </a></li>
+                            <li><a href=" 114">Egypt </a></li>
+                            <li><a href=" 115">Bangladesh </a></li>
+                            <li><a href=" 116">Suriname </a></li>
+                            <li><a href=" 117">Nepal </a></li>
+                            <li><a href=" 118">Jamaica </a></li>
+                            <li><a href=" 119">Saint Lucia </a></li>
+                            <li><a href=" 120">Rwanda </a></li>
+                            <li><a href=" 121">Namibia </a></li>
+                            <li><a href=" 122">Kenya </a></li>
+                            <li><a href=" 123">Honduras </a></li>
+                            <li><a href=" 124">Guyana </a></li>
+                            <li><a href=" 125">Gabonese </a></li>
+                            <li><a href=" 126">Bhutan </a></li>
+                            <li><a href=" 127">Botswana </a></li>
+                            <li><a href=" 128">Samoa </a></li>
+                            <li><a href=" 129">Nicaragua </a></li>
+                            <li><a href=" 130">Algeria </a></li>
+                            <li><a href=" 131">Tajikistan </a></li>
+                            <li><a href=" 132">Belize </a></li>
+                            <li><a href=" 133">Zambia </a></li>
+                            <li><a href=" 134">Cuba </a></li>
+                            <li><a href=" 135">Uganda </a></li>
+                            <li><a href=" 136">Cameroon </a></li>
+                            <li><a href=" 137">Vanuatu </a></li>
+                            <li><a href=" 138">Togo </a></li>
+                            <li><a href=" 139">Tanzania </a></li>
+                            <li><a href=" 140">Libyan </a></li>
+                            <li><a href=" 141">Eswatini (former Swaziland)</a></li>
+                            <li><a href=" 142">Timor-Leste</a></li>
+                            <li><a href=" 143">Nigeria </a></li>
+                            <li><a href=" 144">Tuvalu </a> </li>
+                            <li><a href=" 145">Cambodia </a></li>
+                            <li><a href=" 146">Zimbabwe </a></li>
+                            <li><a href=" 147">Turkmenistan </a></li>
+                            <li><a href=" 148">Pakistan </a>
+                            <li><a href=" 149">Marshall Islands </a></li>
+                            <li><a href=" 150">Senegal</a></li>
+                            <li><a href=" 151">Ethiopia </a></li>
+                            <li><a href=" 152">Syrian </a></li>
+                            <li><a href=" 153">Kiribati </a></li>
+                            <li><a href=" 154">Sao Tome &amp; Principe </a></li>
+                            <li><a href=" 155">Iraq </a></li>
+                            <li><a href=" 156">Angola</a></li>
+                            <li><a href=" 157">Myanmar </a></li>
+                            <li><a href=" 158">Nauru </a></li>
+                            <li><a href=" 159">Benin </a></li>
+                            <li><a href=" 160">Mozambique </a></li>
+                            <li><a href=" 161">Micronesia</a></li>
+                            <li><a href=" 162">Lao</a></li>
+                            <li><a href=" 163">Haiti </a></li>
+                            <li><a href=" 164">Congo </a></li>
+                            <li><a href=" 165">Burkina Faso </a></li>
+                            <li><a href=" 166">Burundi </a></li>
+                            <li><a href=" 167">Lesotho </a></li>
+                            <li><a href=" 168">Gambia</a></li>
+                            <li><a href=" 169">Solomon Islands </a></li>
+                            <li><a href=" 170">Madagascar </a></li>
+                            <li><a href=" 171">Papua New Guinea&nbsp;</a></li>
+                            <li><a href=" 172">C?´te d'Ivoire </a></li>
+                            <li><a href=" 173">Liberia </a></li>
+                            <li><a href=" 174">Sierra Leone </a></li>
+                            <li><a href=" 175">Malawi </a></li>
+                            <li><a href=" 176">Congo </a></li>
+                            <li><a href=" 177">Afghanistan</a></li>
+                            <li><a href=" 178">Mali </a></li>
+                            <li><a href=" 179">Djibouti </a></li>
+                            <li><a href=" 180">Sudan </a></li>
+                            <li><a href=" 181">Guinea </a></li>
+                            <li><a href=" 182">Union of Comoros </a></li>
+                            <li><a href=" 183">Mauritania </a></li>
+                            <li><a href=" 184">Equatorial Guinea </a></li>
+                            <li><a href=" 185">Korea</a></li>
+                            <li><a href=" 186">Yemen </a></li>
+                            <li><a href=" 187">Guinea-Bissau </a></li>
+                            <li><a href=" 188">Central African Republic </a></li>
+                            <li><a href=" 189">Eritrea </a></li>
+                            <li><a href=" 190">Chad </a></li>
+                            <li><a href=" 191">South Sudan</a></li>
+                            <li><a href=" 192">Niger </a></li>
+                            <li><a href=" 193">Somalia </a></li>
+                            <li><a href=" 194">Palestine</a></li>
+                            <li><a href=" 195">country_name</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- select-country Modal end-->
+    <!-- my My E-File modal start -->
     <div class="modal fade" id="my-eFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -490,7 +709,31 @@
         </div>
     </div>
     <!-- addver text Modal end-->
-
+    <!-- add country select modal start -->
+    <div class="modal fade" id="add-country" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a data-toggle="modal" data-target="#select-country" class="btn btn-primary red-btn mt-2 w-100 add-country">
+                                    Select Country
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- add country select end -->
     <!-- assets files -->
     <script src="../js/assets/jquery-3.3.1.min.js"></script> <!-- JQ-->
     <script src="../js/assets/popper.min.js"></script> <!-- popper-->

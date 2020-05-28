@@ -563,7 +563,7 @@ header .logo-img img {
 
 /* helping btn */
 .helping-btn {
-  margin: 80px 0 0;
+  margin: 150px 0 0;
   padding-bottom: 50px;
 }
 
@@ -823,19 +823,22 @@ header .logo-img img {
 
 /* search modal end*/
 /* my efile modal strt */
-#my-eFile {
+#my-eFile,
+#add-country {
   padding: 40px 30% !important;
   overflow-y: scroll;
 }
 
 @media (max-width: 992px) {
-  #my-eFile {
+  #my-eFile,
+  #add-country {
     padding: 40px 20% !important;
   }
 }
 
 @media (max-width: 767px) {
-  #my-eFile {
+  #my-eFile,
+  #add-country {
     padding: 40px 10% !important;
   }
 }
@@ -916,5 +919,42 @@ header .logo-img img {
 
 #addver-text .modal-dialog .modal-content .modal-body p:last-of-type {
   color: #c90000;
+}
+
+#privacy-policy .modal-dialog .modal-content .modal-body {
+  color: #0d1b23;
+}
+
+#privacy-policy .modal-dialog .modal-content .modal-body h4 {
+  font: 22px "RB";
+  color: #c90000;
+}
+
+#privacy-policy .modal-dialog .modal-content .modal-body .sub-title {
+  font: 18px "RB";
+}
+
+#privacy-policy .modal-dialog .modal-content .modal-body .condition-txt {
+  font: 14px "RM";
+}
+
+#privacy-policy .modal-dialog .modal-content .modal-body .condition-txt span {
+  color: #c90000;
+}
+
+#privacy-policy .modal-dialog .modal-content .modal-body .see-more {
+  color: #c90000;
+  background: unset;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#privacy-policy .modal-dialog .modal-content .modal-body .see-more svg {
+  margin: 0 5px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -29,11 +29,28 @@ $(document).ready(function () {
         $(this).prev('.hidden-items').slideToggle(400);
     });
 
-     // view all privacy policy
-     $(".see-more").on('click', function(){
+    // view all privacy policy
+    $(".see-more").on('click', function () {
         $(".hidden-txt").collapse('show');
         $(this).hide();
     });
+    // view all groups
+    $(".see-more").on('click', function () {
+        $(".hidden-row").collapse('show');
+        $(this).hide();
+    });
+     // view all servicse in add service page
+     $(".services .serv-links").on('click', function () {
+        $(".hidden-services").slideDown(400);
+        $(this).hide();
+    });
+    
+ // view category in add service page
+ $(".show-category-list").on('click', function () {
+    $(".category-list").slideDown(400);
+   
+});
+
 
     // Hide the sign-origin Modal 
     $(".next-btn").click(function () {
@@ -130,6 +147,11 @@ $(document).ready(function () {
         }
     });
 
+    // Hide the add country Modal in my govmnti page 
+    $(".add-country").click(function () {
+        $("#add-country").modal("hide");
+    });
+
     //  hide addver-select modal  
     $("#addver-select .not-regester").click(function () {
         $("#addver-select").modal("hide");
@@ -176,7 +198,7 @@ $(document).ready(function () {
 
 
 
-    
+
 
 });
 
