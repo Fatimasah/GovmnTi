@@ -161,11 +161,6 @@
   }
 }
 
-#otp-code .modal-dialog .modal-content .modal-header,
-#request-form .modal-dialog .modal-content .modal-header {
-  padding: 40px 50px 0px;
-}
-
 #otp-code .modal-dialog .modal-content .modal-body form,
 #request-form .modal-dialog .modal-content .modal-body form {
   display: -webkit-box;

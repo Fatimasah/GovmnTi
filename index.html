@@ -30,43 +30,43 @@
 </head>
 
 <body>
-   <!-- ======= Header ======= -->
-   <header id="header" class="fixed-top">
-    <div class="container d-flex" style="max-width: 1350px !important;padding-right: 150px;">
-        <!-- <div class="logo mr-auto"> -->
-        <div class="logo-img">
-            <a href= "index.html"> <img src= "imgs/logo.svg" alt="logo"></a>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex" style="max-width: 1350px !important;padding-right: 150px;">
+            <!-- <div class="logo mr-auto"> -->
+            <div class="logo-img">
+                <a href="index.html"> <img src="imgs/logo.svg" alt="logo"></a>
+            </div>
+            <!-- </div> -->
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a> </li>
+                    <li><a href="html/My-GovmnTi.html">My GovmnTi </a> </li>
+                    <li><a class="nav-link" data-toggle="modal" data-target="#my-eFile">My E-File</a> </li>
+                    <li><a class="nav-link" data-toggle="modal" data-target="#addver-select">Advertising</a> </li>
+
+                    <li><a href="html/signIn.html" style="color: #C90000;">SignIn/up</a> </li>
+                    <li class="drop-down"><a href="">Lang</a>
+                        <ul>
+                            <li><a href="{{url('en')}}"><img alt="sar" src="{{url('assets/img/usd.png')}}">English</a>
+                            </li>
+                            <li><a href="{{url('ar')}}"><img alt="sar" src="{{url('assets/img/sar.png')}}">Arabic</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="drop-down"><a href=""><img alt="usd" src="imgs/ico.png"></a>
+                        <ul class="grid">
+                            <li class="grid-li"><a href="#about">Eng</a> </li>
+                            <li><a href="#team">Ar</a> </li>
+                            <li><a href="#team">Ar</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- .nav-menu -->
         </div>
-        <!-- </div> -->
-
-        <nav class="nav-menu d-none d-lg-block">
-            <ul>
-                <li class="active"><a href= "index.html">Home</a> </li>
-                <li><a href= "html/My-GovmnTi.html">My GovmnTi </a> </li>
-                <li><a class="nav-link" data-toggle="modal" data-target="#my-eFile">My E-File</a> </li>
-                <li><a class="nav-link" data-toggle="modal" data-target="#addver-select">Advertising</a> </li>
-
-                <li><a href="html/signIn.html" style="color: #C90000;">SignIn/up</a> </li>
-                <li class="drop-down"><a href="">Lang</a>
-                    <ul>
-                        <li><a href="{{url('en')}}"><img alt="sar" src="{{url('assets/img/usd.png')}}">English</a>
-                        </li>
-                        <li><a href="{{url('ar')}}"><img alt="sar" src="{{url('assets/img/sar.png')}}">Arabic</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="drop-down"><a href=""><img alt="usd" src= "imgs/ico.png"></a>
-                    <ul class="grid">
-                        <li class="grid-li"><a href="#about">Eng</a> </li>
-                        <li><a href="#team">Ar</a> </li>
-                        <li><a href="#team">Ar</a> </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav><!-- .nav-menu -->
-    </div>
-</header>
-<!-- End Header -->
+    </header>
+    <!-- End Header -->
 
     <!--start adver-section -->
     <section class="adver-section px-4">
@@ -344,6 +344,11 @@
                     <div class="logo-img w-100 mt-0">
                         <a href="index.html"> <img src="imgs/logo.svg" alt="logo"></a>
                     </div>
+                    <!-- added 30/05/2020 -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <!-- added 30/05/2020 -->
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid p-0">
@@ -375,15 +380,22 @@
                     <div class="logo-img w-100 mt-0">
                         <a href="index.html"> <img src="imgs/logo.svg" alt="logo"></a>
                     </div>
+                    <!-- added 30/05/2020 -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <!-- added 30/05/2020 -->
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid p-0">
                         <div class="row">
                             <div class="select-btn mx-auto col-sm-6">
+                                <!-- edited 30/05/2020-->
                                 <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
-                                    data-target="#addver-regester">
+                                    data-target="#addver-text">
                                     Registered
                                 </button>
+                                <!-- edited 30/05/2020-->
                             </div>
                             <div class="select-btn mx-auto col-sm-6">
                                 <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
@@ -399,7 +411,7 @@
     </div>
     <!-- addvertisng select modal end -->
 
-    <!-- addver regester Modal start-->
+    <!-- addver register Modal start-->
     <div class="modal fade" id="addver-regester" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog " role="document">
@@ -457,7 +469,7 @@
             </div>
         </div>
     </div>
-    <!-- addver regester Modal end-->
+    <!-- addver register Modal end-->
 
     <!-- addver text Modal start-->
     <div class="modal fade" id="addver-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

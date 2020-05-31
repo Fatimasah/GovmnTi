@@ -1,7 +1,8 @@
 $(document).ready(function () {
     //view all btn in information service
-    $('.service-modal #view-all').click(function () {
-        $('#hidden-muni').slideToggle(400);
+    // 30/05/2020
+    $('#city-info #view-all').click(function () {
+        $('#city-info #hidden-muni').slideToggle(400);
         $(this).text(function (i, v) {
             return v === 'view less' ? ' view all' : 'view less'
         })
@@ -14,42 +15,61 @@ $(document).ready(function () {
     });
 
     // view all/ less in my govmnti
-    $(".hidden-services").hide();
-    $(".serv-links").on("click", function () {
-        var txt = $(this).prev(".hidden-services").is(':visible') ? 'view all' : 'view Less';
+    // 30/05/2020
+    $("#country-services .hidden-services").hide();
+    $("#country-services .serv-links").on("click", function () {
+        var txt = $(this).prev("#country-services .hidden-services").is(':visible') ? 'view all' : 'view Less';
         $(this).text(txt);
-        $(this).prev('.hidden-services').slideToggle(400);
+        $(this).prev('#country-services .hidden-services').slideToggle(400);
     });
 
     // view all/ less in mini data
-    $(".hidden-items").hide();
-    $(".view-all").on("click", function () {
-        var txt = $(this).prev(".hidden-items").is(':visible') ? 'view all' : 'view Less';
+    // 30/05/2020
+    $(".mini-data-blocks .hidden-items").hide();
+    $(".mini-data-blocks .view-all").on("click", function () {
+        var txt = $(this).prev(".mini-data-blocks .hidden-items").is(':visible') ? 'view all' : 'view Less';
         $(this).text(txt);
-        $(this).prev('.hidden-items').slideToggle(400);
+        $(this).prev('.mini-data-blocks .hidden-items').slideToggle(400);
     });
 
     // view all privacy policy
-    $(".see-more").on('click', function () {
-        $(".hidden-txt").collapse('show');
+    // 30/05/2020
+    $("#privacy-policy .see-more").on('click', function () {
+        $("#privacy-policy .hidden-txt").collapse('show');
         $(this).hide();
     });
-    // view all groups
-    $(".see-more").on('click', function () {
-        $(".hidden-row").collapse('show');
-        $(this).hide();
+
+    // view all groups and my groups page in all groups page && see more category in add service page 30/05/2020
+    $('.profile-form .see-more').click(function () {
+        var button = this
+        $('.profile-form .hidden-row').slideToggle('slow', function () {
+            if ($('.profile-form .hidden-row').is(':visible')) {
+
+                $(button).html(' View Less <i class="arrows_ fas fa-angle-double-up"></i>');
+            } else {
+                $(button).html(' View All <i class="arrows_ fas fa-angle-double-down"></i>');
+            }
+        });
     });
-     // view all servicse in add service page
-     $(".services .serv-links").on('click', function () {
-        $(".hidden-services").slideDown(400);
-        $(this).hide();
+
+    // view all servicse in add service page 30/05/2020
+    $(".services .view-all").click(function () {
+        var button = this
+        $('.services .hidden-services').slideToggle('slow', function () {
+            if ($('.services .hidden-services').is(':visible')) {
+
+                $(button).html(' View Less <i class="arrows_ fas fa-angle-double-up"></i>');
+            } else {
+                $(button).html(' View All <i class="arrows_ fas fa-angle-double-down"></i>');
+            }
+        });
+
     });
-    
- // view category in add service page
- $(".show-category-list").on('click', function () {
-    $(".category-list").slideDown(400);
-   
-});
+
+    // view category in add service page
+    $(".show-category-list").on('click', function () {
+        $(".category-list").slideDown(400);
+    });
 
 
     // Hide the sign-origin Modal 
@@ -177,6 +197,34 @@ $(document).ready(function () {
     $("#addver-regester .addver-confirm").click(function () {
         $("#addver-regester").modal("hide");
     });
+
+    //30/05/2020
+     //  hide services information city modal in country page  
+     $("#city-info .serv-links").click(function () {
+        $("#city-info").modal("hide");
+    });
+    // new site register modal (enable confirm btn)
+    $('#new-site #first-name, #new-site #mobile-num, #new-site #tel-num, #new-site #fax-num, #new-site #email ').change(function () {
+        var str = "";
+        if ((!$("#new-site #first-name").val()) ||
+            (!$("#new-site #mobile-num").val()) ||
+            (!$("#new-site #tel-num").val()) ||
+            (!$("#new-site #fax-num").val()) ||
+            (!$("#new-site #email").val())
+        ) {
+
+            $('#new-site .newSite-confirm').prop('disabled', true);
+        }
+        else {
+            $('#new-site .newSite-confirm').prop('disabled', false);
+        }
+    });
+
+    //  hide new site register city modal  
+    $("#new-site .newSite-confirm").click(function () {
+        $("#new-site").modal("hide");
+    });
+    //30/05/2020
 
     //seeting 
     // img upload

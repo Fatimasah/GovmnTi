@@ -82,18 +82,19 @@
                         <div class="e-block grayBack mb-3"><a href="../html/indiviual-pages/id's.html">ID'S</a></div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="e-block goldBack mb-3"><a
-                                href="../html/indiviual-pages/education.html">edication</a></div>
+                        <div class="e-block goldBack mb-3">
+                            <a href="../html/indiviual-pages/education.html">Education</a>
+                        </div> <!-- edited 30/05/2020 -->
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="e-block redBack mb-3"><a href="../html/indiviual-pages/work.html">work</a></div>
+                        <div class="e-block redBack mb-3"><a href="../html/indiviual-pages/work.html">Work</a></div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="e-block turquoiseBack mb-3"><a href="../html/indiviual-pages/health.html">health</a>
+                        <div class="e-block turquoiseBack mb-3"><a href="../html/indiviual-pages/health.html">Health</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="e-block darkBlue mb-3"><a href="../html/indiviual-pages/wealth.html">wealth</a>
+                        <div class="e-block darkBlue mb-3"><a href="../html/indiviual-pages/wealth.html">Wealth</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
@@ -120,45 +121,21 @@
         </div>
     </footer><!-- End Footer -->
 
-    <!-- my e-file modal start -->
-    <div class="modal fade" id="my-eFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="logo-img w-100 mt-0">
-                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid p-0">
-                        <div class="row">
-                            <div class="select-btn mx-auto col-sm-6">
-                                <a href="ind-eFile.html" class="btn btn-primary red-btn mt-2 w-100">
-                                    Individual
-                                </a>
-                            </div>
-                            <div class="select-btn mx-auto col-sm-6">
-                                <a href="cor-eFile.html" class="btn btn-primary blue-btn mt-2 w-100">
-                                    Corporate
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- my efile modal end -->
+
 
     <!-- ind-form modal start -->
     <div class="modal fade eFile-form" id="ind-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header justify-content-center">
-                    <h2>Individual</h2>
+                <!-- added & edited 30/05/2020 -->
+                <div class="modal-header">
+                    <h2 class="mx-auto">Individual</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
                 </div>
+                <!-- added & edited 30/05/2020 -->
                 <div class="modal-body">
                     <div class="container-fluid p-0">
                         <form>
@@ -209,7 +186,7 @@
                                 </div>
                             </div><!-- email and contact number-->
                             <div class="select-btn mx-auto mt-4">
-                                <button type="submit" id="send-otp" class="btn btn-primary red-btn mt-4 w-100"
+                                <button type="button" id="send-otp" class="btn btn-primary red-btn mt-4 w-100"
                                     data-toggle="modal" data-target="#otp-code" disabled>
                                     Send OTP to Registered Mobile
                                 </button>
@@ -227,8 +204,13 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header justify-content-center">
+                <!-- added & edited 30/05/2020 -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
                 </div>
+                <!-- added & edited 30/05/2020 -->
                 <div class="modal-body">
                     <div class="container-fluid p-0">
                         <form>
@@ -245,21 +227,52 @@
                             <p>I Didn't recive the OTP</p>
                             <a href="#">request</a>
                         </div>
-
-
                         <div class="select-btn mx-auto mt-4">
-                            <!-- <button class="btn btn-primary blue-btn mt-4 w-100">
-                                confirm </button> -->
                             <a href="../html/indiviual-pages/id's.html" class="btn btn-primary red-btn mt-4 w-100">
                                 confirm </a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- otp-code modal end-->
+
+    <!-- my e-file modal start -->
+    <div class="modal fade" id="my-eFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                    <!-- added 30/05/2020 -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <!-- added 30/05/2020 -->
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="ind-eFile.html" class="btn btn-primary red-btn mt-2 w-100">
+                                    Individual
+                                </a>
+                            </div>
+                            <div class="select-btn mx-auto col-sm-6">
+                                <a href="cor-eFile.html" class="btn btn-primary blue-btn mt-2 w-100">
+                                    Corporate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my efile modal end -->
 
     <!-- addvertisng select modal start -->
     <div class="modal fade" id="addver-select" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
@@ -270,14 +283,22 @@
                     <div class="logo-img w-100 mt-0">
                         <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
                     </div>
+                    <!-- added 30/05/2020 -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <!-- added 30/05/2020 -->
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid p-0">
                         <div class="row">
                             <div class="select-btn mx-auto col-sm-6">
-                                <a href="html/My-GovmnTi.html" class="btn btn-primary red-btn mt-2 w-100">
+                                <!-- edited 30/05/2020-->
+                                <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
+                                    data-target="#addver-text">
                                     Registered
-                                </a>
+                                </button>
+                                <!-- edited 30/05/2020-->
                             </div>
                             <div class="select-btn mx-auto col-sm-6">
                                 <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
@@ -293,7 +314,7 @@
     </div>
     <!-- addvertisng select modal end -->
 
-    <!-- addver regester Modal start-->
+    <!-- addver register Modal start-->
     <div class="modal fade" id="addver-regester" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog " role="document">
@@ -342,7 +363,7 @@
                             </div>
                         </form>
                     </div>
-                    <button type="submit" class="btn red-btn mt-4 w-100 addver-confirm" data-toggle="modal"
+                    <button type="button" class="btn red-btn mt-4 w-100 addver-confirm" data-toggle="modal"
                         data-target="#addver-text" disabled>
                         confirm
                     </button>
@@ -351,7 +372,7 @@
             </div>
         </div>
     </div>
-    <!-- addver regester Modal end-->
+    <!-- addver register Modal end-->
 
     <!-- addver text Modal start-->
     <div class="modal fade" id="addver-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

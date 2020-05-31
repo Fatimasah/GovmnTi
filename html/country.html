@@ -321,7 +321,11 @@
                         </div>
                         <div class="form-group row text-center">
                             <div class="col-sm-6">
-                                <div class="d-flex mb-2"> <a href="#" class="serv-links mx-0">create your own website</a>
+                                <div class="d-flex mb-2">
+                                    <!-- edite 30/05/2020 -->
+                                    <button type="button" class="serv-links mx-0" data-toggle="modal"
+                                        data-target="#new-site">create your own website</button>
+                                    <!-- edite 30/05/2020 -->
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -649,6 +653,11 @@
                     <div class="logo-img w-100 mt-0">
                         <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
                     </div>
+                    <!-- added 30/05/2020 -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <!-- added 30/05/2020 -->
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid p-0">
@@ -671,121 +680,213 @@
     </div>
     <!-- my efile modal end -->
 
-   <!-- addvertisng select modal start -->
-   <div class="modal fade" id="addver-select" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
-   aria-hidden="true">
-   <div class="modal-dialog" role="document">
-       <div class="modal-content">
-           <div class="modal-header">
-               <div class="logo-img w-100 mt-0">
-                   <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
-               </div>
-           </div>
-           <div class="modal-body">
-               <div class="container-fluid p-0">
-                   <div class="row">
-                       <div class="select-btn mx-auto col-sm-6">
-                           <a href="html/My-GovmnTi.html" class="btn btn-primary red-btn mt-2 w-100">
-                               Registered
-                           </a>
-                       </div>
-                       <div class="select-btn mx-auto col-sm-6">
-                           <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
-                               data-target="#addver-regester">
-                               Not Registered
-                           </button>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-</div>
-<!-- addvertisng select modal end -->
+    <!-- addvertisng select modal start -->
+    <div class="modal fade" id="addver-select" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                    <!-- added 30/05/2020 -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <!-- added 30/05/2020 -->
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="select-btn mx-auto col-sm-6">
+                                <!-- edited 30/05/2020-->
+                                <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
+                                    data-target="#addver-text">
+                                    Registered
+                                </button>
+                                <!-- edited 30/05/2020-->
+                            </div>
+                            <div class="select-btn mx-auto col-sm-6">
+                                <button class="btn btn-primary blue-btn mt-2 w-100 not-regester" data-toggle="modal"
+                                    data-target="#addver-regester">
+                                    Not Registered
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addvertisng select modal end -->
 
-<!-- addver regester Modal start-->
-<div class="modal fade" id="addver-regester" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-   aria-hidden="true">
-   <div class="modal-dialog " role="document">
-       <div class="modal-content">
-           <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                   <span aria-hidden="true">&times;</span>
-               </button>
-           </div>
-           <div class="modal-body">
-               <div class="container-fluid p-0">
-                   <form>
-                       <div class="form-row">
-                           <div class="form-group col-12">
-                               <label for="first-name">(first, family) name</label>
-                               <input type="text" class="form-control" id="first-name" placeholder="first name"
-                                   required>
-                           </div>
-                       </div> <!-- first name-->
-                       <div class="form-row">
-                           <div class="form-group col-12">
-                               <label for="mobile-num">mobile number</label>
-                               <input type="number" class="form-control" id="mobile-num"
-                                   placeholder="mobile number" required>
-                           </div>
-                       </div> <!-- mobile -->
-                       <div class="form-row">
-                           <div class="form-group col-12">
-                               <label for="tel-num">tel. number</label>
-                               <input type="tel" class="form-control" id="tel-num" placeholder="tel. number"
-                                   required>
-                           </div>
-                       </div><!-- tel num-->
-                       <div class="form-row">
-                           <div class="form-group col-12">
-                               <label for="fax-num">fax number</label>
-                               <input type="number" class="form-control" id="fax-num" placeholder="fax number"
-                                   required>
-                           </div>
-                       </div> <!-- fax num-->
-                       <div class="form-row">
-                           <div class="form-group col-12">
-                               <label for="email">email</label>
-                               <input type="email" class="form-control" id="email" placeholder="email" required>
-                           </div>
-                       </div>
-                   </form>
-               </div>
-               <button type="submit" class="btn red-btn mt-4 w-100 addver-confirm" data-toggle="modal"
-                   data-target="#addver-text" disabled>
-                   confirm
-               </button>
+    <!-- addver register Modal start-->
+    <div class="modal fade" id="addver-regester" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="first-name">(first, family) name</label>
+                                    <input type="text" class="form-control" id="first-name" placeholder="first name"
+                                        required>
+                                </div>
+                            </div> <!-- first name-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="mobile-num">mobile number</label>
+                                    <input type="number" class="form-control" id="mobile-num"
+                                        placeholder="mobile number" required>
+                                </div>
+                            </div> <!-- mobile -->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="tel-num">tel. number</label>
+                                    <input type="tel" class="form-control" id="tel-num" placeholder="tel. number"
+                                        required>
+                                </div>
+                            </div><!-- tel num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="fax-num">fax number</label>
+                                    <input type="number" class="form-control" id="fax-num" placeholder="fax number"
+                                        required>
+                                </div>
+                            </div> <!-- fax num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="email">email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn red-btn mt-4 w-100 addver-confirm" data-toggle="modal"
+                        data-target="#addver-text" disabled>
+                        confirm
+                    </button>
 
-           </div>
-       </div>
-   </div>
-</div>
-<!-- addver regester Modal end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addver register Modal end-->
 
-<!-- addver text Modal start-->
-<div class="modal fade" id="addver-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-   aria-hidden="true">
-   <div class="modal-dialog " role="document">
-       <div class="modal-content">
-           <div class="modal-header">
-               <div class="logo-img w-100 mt-0">
-                   <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
-               </div>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                   <span aria-hidden="true">&times;</span>
-               </button>
-           </div>
-           <div class="modal-body">
-               <p>GovmnTi Administration would like to thank you for your trust to advertise with us</p>
-               <p>Our sales department will call you soon.</p>
-           </div>
-       </div>
-   </div>
-</div>
-<!-- addver text Modal end-->
+    <!-- addver text Modal start-->
+    <div class="modal fade" id="addver-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>GovmnTi Administration would like to thank you for your trust to advertise with us</p>
+                    <p>Our sales department will call you soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addver text Modal end-->
 
-    
+    <!-- added 30/05/2020 -->
+    <!-- create new site Modal start-->
+    <div class="modal fade" id="new-site" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pb-4">
+                    <div class="container-fluid p-0">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="first-name">(first, family) name</label>
+                                    <input type="text" class="form-control" id="first-name" placeholder="first name"
+                                        required>
+                                </div>
+                            </div> <!-- first name-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="mobile-num">mobile number</label>
+                                    <input type="number" class="form-control" id="mobile-num"
+                                        placeholder="mobile number" required>
+                                </div>
+                            </div> <!-- mobile -->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="tel-num">tel. number</label>
+                                    <input type="tel" class="form-control" id="tel-num" placeholder="tel. number"
+                                        required>
+                                </div>
+                            </div><!-- tel num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="fax-num">fax number</label>
+                                    <input type="number" class="form-control" id="fax-num" placeholder="fax number"
+                                        required>
+                                </div>
+                            </div> <!-- fax num-->
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="email">email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn red-btn mt-4 w-100 newSite-confirm" data-toggle="modal"
+                        data-target="#site-text" disabled>
+                        confirm
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- create new site Modal end-->
+
+    <!-- create new site txt Modal start-->
+    <div class="modal fade" id="site-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo-img w-100 mt-0">
+                        <a href="../index.html"> <img src="../imgs/logo.svg" alt="logo"></a>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>GovmnTi Administration would like to thank you for your trust to build you a unique and creative
+                        website</p>
+                    <p>Our sales department will call you soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- create new site txt Modal end-->
+    <!-- added 30/05/2020 -->
+
     <!-- assets files -->
     <script src="../js/assets/jquery-3.3.1.min.js"></script> <!-- JQ-->
     <script src="../js/assets/popper.min.js"></script> <!-- popper-->

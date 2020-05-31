@@ -158,7 +158,7 @@ section {
 .modal.service-modal .modal-dialog .modal-content .modal-header {
   background-color: #af0101;
   border: none;
-  padding: 20px 30px;
+  padding: 20px 15px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;

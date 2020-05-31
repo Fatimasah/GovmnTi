@@ -285,6 +285,9 @@ body {
         }
     }
 }
+.hidden-row{
+    display: none;
+}
 // end navbar section
 
 /* header */
@@ -347,13 +350,13 @@ header {
             box-shadow: 0px 3px 6px #00000029;
             border-radius: 15px;
             .modal-header {
-                padding: 20px 20px 0px;
+                padding: 10px 10px 0px;
                 border: none;
                 justify-content: flex-end;
                 border-top: 17px solid #af0101;
                 .close {
-                    width: 35px;
-                    height: 35px;
+                    width: 25px; //edited 30/05/2020
+                    height: 25px; //edited 30/05/2020
                     padding: 0px;
                     margin: 0px;
                     z-index: 10;
@@ -366,7 +369,7 @@ header {
                     opacity: 1;
                     span {
                         text-shadow: none;
-                        font-size: 25px;
+                        font-size: 18px;  //edited 30/05/2020
                         color: white;
                     }
                 }
@@ -681,7 +684,9 @@ header {
 /* #addver-select, #addver-regester, #addver-text modal */
 #addver-select,
 #addver-regester,
-#addver-text {
+#addver-text,
+#new-site, //edite 30/05/2020
+#site-text {
     padding: 40px 30% !important;
     @media (max-width: 992px) {
         padding: 40px 20% !important;
@@ -703,7 +708,8 @@ header {
         }
     }
 }
-#addver-text {
+#addver-text,
+#site-text { //edite 30/05/2020
     margin-top: -20px;
     padding: 40px 20% !important;
     @media (max-width: 992px) {
