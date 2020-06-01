@@ -25,12 +25,19 @@ $(document).ready(function () {
 
     // view all/ less in mini data
     // 30/05/2020
-    $(".mini-data-blocks .hidden-items").hide();
-    $(".mini-data-blocks .view-all").on("click", function () {
-        var txt = $(this).prev(".mini-data-blocks .hidden-items").is(':visible') ? 'view all' : 'view Less';
-        $(this).text(txt);
-        $(this).prev('.mini-data-blocks .hidden-items').slideToggle(400);
+    //edited 01/06/2020
+    $('.mini-data-blocks .view-all').click(function () {
+        var button = this
+        $('.mini-data-blocks .hidden-items').slideToggle('slow', function () {
+            if ($('.mini-data-blocks .hidden-items').is(':visible')) {
+
+                $(button).html(' View Less <i class="arrows_ fas fa-angle-double-up"></i>');
+            } else {
+                $(button).html(' View All <i class="arrows_ fas fa-angle-double-down"></i>');
+            }
+        });
     });
+
 
     // view all privacy policy
     // 30/05/2020
@@ -199,8 +206,8 @@ $(document).ready(function () {
     });
 
     //30/05/2020
-     //  hide services information city modal in country page  
-     $("#city-info .serv-links").click(function () {
+    //  hide services information city modal in country page  
+    $("#city-info .serv-links").click(function () {
         $("#city-info").modal("hide");
     });
     // new site register modal (enable confirm btn)

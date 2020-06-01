@@ -17,6 +17,20 @@
   font: 18px "RB";
   border: none;
   background: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+}
+
+.eFile-section .mini-data-blocks .view-all svg {
+  margin: 0 5px;
 }
 
 .eFile-section .mini-data-blocks .hidden-items {

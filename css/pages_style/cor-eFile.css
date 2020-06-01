@@ -273,6 +273,12 @@
   padding: 0 30%;
 }
 
+@media (max-width: 992px) {
+  #otp-code .modal-dialog .modal-content .modal-body {
+    padding: 0px 15%;
+  }
+}
+
 #request-form .hidden-confirm {
   display: none;
 }
@@ -320,6 +326,7 @@
 
 .legal .eFile-blocks .side-container {
   background: #ffffff;
+  height: 100%;
 }
 
 .legal .eFile-blocks .side-container .service-block {
