@@ -16,11 +16,11 @@ $(document).ready(function () {
 
     // view all/ less in my govmnti
     // 30/05/2020
-    $("#country-services .hidden-services").hide();
-    $("#country-services .serv-links").on("click", function () {
-        var txt = $(this).prev("#country-services .hidden-services").is(':visible') ? 'view all' : 'view Less';
+    $(".country-services .hidden-services").hide();
+    $(".country-services .serv-links").on("click", function () {
+        var txt = $(this).prev(".country-services .hidden-services").is(':visible') ? 'view all' : 'view Less';
         $(this).text(txt);
-        $(this).prev('#country-services .hidden-services').slideToggle(400);
+        $(this).prev('.country-services .hidden-services').slideToggle(400);
     });
 
     // view all/ less in mini data
