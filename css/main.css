@@ -940,28 +940,34 @@ header .logo-img img {
   color: #c90000;
 }
 
-#privacy-policy .modal-dialog .modal-content .modal-body {
+#privacy-policy .modal-dialog .modal-content .modal-body,
+#eFile-support .modal-dialog .modal-content .modal-body {
   color: #0d1b23;
 }
 
-#privacy-policy .modal-dialog .modal-content .modal-body h4 {
+#privacy-policy .modal-dialog .modal-content .modal-body h4,
+#eFile-support .modal-dialog .modal-content .modal-body h4 {
   font: 22px "RB";
   color: #c90000;
 }
 
-#privacy-policy .modal-dialog .modal-content .modal-body .sub-title {
+#privacy-policy .modal-dialog .modal-content .modal-body .sub-title,
+#eFile-support .modal-dialog .modal-content .modal-body .sub-title {
   font: 18px "RB";
 }
 
-#privacy-policy .modal-dialog .modal-content .modal-body .condition-txt {
+#privacy-policy .modal-dialog .modal-content .modal-body .condition-txt,
+#eFile-support .modal-dialog .modal-content .modal-body .condition-txt {
   font: 14px "RM";
 }
 
-#privacy-policy .modal-dialog .modal-content .modal-body .condition-txt span {
+#privacy-policy .modal-dialog .modal-content .modal-body .condition-txt span,
+#eFile-support .modal-dialog .modal-content .modal-body .condition-txt span {
   color: #c90000;
 }
 
-#privacy-policy .modal-dialog .modal-content .modal-body .see-more {
+#privacy-policy .modal-dialog .modal-content .modal-body .see-more,
+#eFile-support .modal-dialog .modal-content .modal-body .see-more {
   color: #c90000;
   background: unset;
   border: none;
@@ -973,7 +979,8 @@ header .logo-img img {
           align-items: center;
 }
 
-#privacy-policy .modal-dialog .modal-content .modal-body .see-more svg {
+#privacy-policy .modal-dialog .modal-content .modal-body .see-more svg,
+#eFile-support .modal-dialog .modal-content .modal-body .see-more svg {
   margin: 0 5px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -46,6 +46,19 @@ $(document).ready(function () {
         $(this).hide();
     });
 
+     // view all eFile-support
+    // 09/06/2020
+    $("#eFile-support .see-more").on('click', function () {
+        $("#eFile-support .hidden-txt").collapse('show');
+        $(this).hide();
+    });
+
+     // Hide the eFile-support Modal  
+    // 09/06/2020
+     $(".eSupport-btn").click(function () {
+        $("#eFile-support").modal("hide");
+    });
+
     // view all groups and my groups page in all groups page && see more category in add service page 30/05/2020
     $('.profile-form .see-more').click(function () {
         var button = this
